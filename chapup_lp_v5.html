@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>抜け毛が増えた"気がする"なら、まず見直したい頭皮環境のこと</title>
+<style>
+/* ===== Squad Beyond ベーススタイル踏襲 ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #000;
+  background-color: #F4F4F4;
+  -webkit-font-smoothing: antialiased;
+}
+@media screen and (min-width: 920px) {
+  body { width: 620px; margin: 0 auto; }
+}
+img { display: block; max-width: 100%; height: auto; margin: 16px 0; }
+a { text-decoration: underline; color: #4682b4; }
+
+/* ===== Article wrapper ===== */
+.article-header-wrapper img { max-width: 100%; }
+.article-body {
+  position: relative;
+  font-size: 17px;
+  line-height: 1.8;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+.article-body p { margin: 0 0 16px; }
+.article-body h2 { font-size: 21px; margin: 0 0 14px; font-weight: bold; }
+.article-body h3 { font-size: 19px; margin: 24px 0 10px; font-weight: bold; }
+
+/* ===== テキストユーティリティ（参考元踏襲） ===== */
+.sb-align-center { display: block; text-align: center; }
+.sb-align-left { display: block; text-align: left; }
+.sb-font-bold { font-weight: bold; }
+.sb-color-red { color: #ff0000; }
+.sb-color-black { color: #000; }
+.sb-fs-10 { font-size: 10px; }
+.sb-fs-13 { font-size: 13px; }
+.sb-fs-15 { font-size: 15px; }
+.sb-fs-17 { font-size: 17px; }
+.sb-fs-19 { font-size: 19px; }
+.sb-fs-21 { font-size: 21px; }
+.sb-fs-23 { font-size: 23px; }
+.sb-fs-25 { font-size: 25px; }
+.sb-fs-27 { font-size: 27px; }
+
+/* ===== 黄色マーカーアニメーション（参考元と同仕様） ===== */
+.sb-bg-gum-marker {
+  background: linear-gradient(to right, #ffee57 50%, transparent 50%) 100% 0% / 200% 70% no-repeat;
+  transition: background-position 1s ease-out;
+}
+.sb-bg-gum-marker.animated {
+  background-position: bottom 0 right 100% !important;
+}
+
+/* ===== セクション区切り ===== */
+.section-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 28px 0;
+}
+
+/* ===== FV 共感バブル ===== */
+.empathy-bubbles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+.empathy-bubble {
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 18px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #444;
+  max-width: 88%;
+  line-height: 1.6;
+}
+.empathy-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  background: #f5f5f5;
+  border-radius: 50%;
+}
+.empathy-bubble:nth-child(even) {
+  align-self: flex-end;
+  background: #eef5ee;
+}
+.empathy-bubble:nth-child(even)::before {
+  left: auto;
+  right: 20px;
+  background: #eef5ee;
+}
+.empathy-bubble strong { color: #222; }
+
+.fv-lead {
+  background: linear-gradient(135deg, #f8faf8, #eef3ee);
+  border-radius: 10px;
+  padding: 18px 16px;
+  margin: 20px 0;
+  border-left: 4px solid #3d7a3d;
+}
+.fv-lead p { font-size: 15px; margin-bottom: 8px; }
+.fv-lead p:last-child { margin-bottom: 0; }
+
+/* ===== タイルカード（Section 1：抜け毛タイミング） ===== */
+.tile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0;
+}
+.tile-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 16px 14px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.03);
+  transition: box-shadow .2s;
+}
+.tile-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.07); }
+.tile-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+.tile-card-icon.season  { background: #fef0e8; }
+.tile-card-icon.habit   { background: #e8f0fe; }
+.tile-card-icon.stress  { background: #fef8e8; }
+.tile-card-icon.wash    { background: #e8fef0; }
+.tile-card h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #222;
+  margin: 0 0 6px;
+}
+.tile-card p {
+  font-size: 12.5px;
+  color: #777;
+  margin: 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* ===== ステップフロー（Section 2：見直しポイント） ===== */
+.step-flow {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 28px;
+}
+.step-flow::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #c5dcc5, #3d7a3d);
+  border-radius: 1px;
+}
+.step-flow-item {
+  position: relative;
+  padding: 0 0 24px 20px;
+}
+.step-flow-item:last-child { padding-bottom: 0; }
+.step-flow-item::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background: #3d7a3d;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #c5dcc5;
+}
+.step-flow-item h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2a5c2a;
+  margin: 0 0 4px;
+}
+.step-flow-item p {
+  font-size: 14.5px;
+  color: #555;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* ===== 矢印コネクター ===== */
+.arrow-connector {
+  text-align: center;
+  margin: 20px 0;
+  color: #3d7a3d;
+}
+.arrow-connector svg {
+  display: block;
+  margin: 0 auto;
+}
+.arrow-connector p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3d7a3d;
+  margin: 8px 0 0;
+}
+
+/* ===== チェックリストヘッダー ===== */
+.checklist-header {
+  text-align: center;
+  background: linear-gradient(135deg, #f2f8f2, #e8f0e8);
+  border: 1px solid #c5dcc5;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 0 0 16px;
+}
+.checklist-header .badge {
+  display: inline-block;
+  background: #3d7a3d;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 14px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+.checklist-header p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2a5c2a;
+  margin: 0;
+}
+
+/* ===== 囲みボックス ===== */
+.info-box {
+  background: #f9f9f2;
+  border: 1px solid #e0dcc8;
+  border-radius: 8px;
+  padding: 18px 16px;
+  margin: 20px 0;
+}
+.info-box.green {
+  background: #f2f8f2;
+  border-color: #c5dcc5;
+}
+.info-box-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #3d7a3d;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed #c5dcc5;
+}
+.info-box p { font-size: 15px; line-height: 1.8; }
+
+/* ===== チェックリスト ===== */
+.checklist { list-style: none; margin: 16px 0; padding: 0; }
+.checklist li {
+  position: relative;
+  padding: 12px 14px 12px 40px;
+  background: #fafaf5;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  border: 1px solid #eee;
+}
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 14px; top: 12px;
+  color: #3d7a3d;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ===== 成分テーブル ===== */
+.ingredient-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+}
+.ingredient-table th, .ingredient-table td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+}
+.ingredient-table th {
+  background: #f2f8f2;
+  color: #2a5c2a;
+  font-weight: bold;
+  width: 38%;
+}
+
+/* ===== ステップリスト ===== */
+.step-list { counter-reset: step; list-style: none; margin: 16px 0; padding: 0; }
+.step-list li {
+  counter-increment: step;
+  position: relative;
+  padding: 14px 14px 14px 52px;
+  margin-bottom: 10px;
+  background: #f9faf9;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 1px solid #e5ebe5;
+}
+.step-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: 14px; top: 14px;
+  width: 28px; height: 28px;
+  background: #3d7a3d;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ===== 価格ボックス ===== */
+.price-box {
+  text-align: center;
+  background: linear-gradient(135deg, #fffef5 0%, #fff8e1 100%);
+  border: 2px solid #e0c860;
+  border-radius: 12px;
+  padding: 24px 16px;
+  margin: 24px 0;
+}
+
+/* ===== CTAボタン（参考元のオレンジ系踏襲） ===== */
+.cta-wrap { text-align: center; padding: 10px 0; }
+.cta-btn {
+  display: inline-block;
+  width: 90%;
+  max-width: 460px;
+  padding: 18px 20px;
+  background: linear-gradient(180deg, #e8913a 0%, #d47a24 100%);
+  color: #fff !important;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none !important;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(212,122,36,.35);
+  transition: transform .15s, box-shadow .15s;
+  line-height: 1.5;
+}
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212,122,36,.45);
+}
+.cta-btn small { display: block; font-size: 12px; font-weight: normal; margin-top: 4px; opacity: .9; }
+.cta-note { text-align: center; font-size: 11px; color: #999; margin-top: 6px; }
+
+/* ===== Q&A ===== */
+.qa-item { margin-bottom: 18px; }
+.qa-q {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  padding: 12px 14px 12px 42px;
+  background: #f2f8f2;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  border: 1px solid #d5e5d5;
+  border-bottom: none;
+}
+.qa-q::before {
+  content: "Q";
+  position: absolute; left: 14px; top: 12px;
+  color: #3d7a3d;
+  font-size: 17px;
+  font-weight: bold;
+}
+.qa-a {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.85;
+  padding: 14px 14px 14px 42px;
+  background: #fafafa;
+  border-radius: 0 0 8px 8px;
+  position: relative;
+  border: 1px solid #eee;
+}
+.qa-a::before {
+  content: "A";
+  position: absolute; left: 14px; top: 14px;
+  color: #d47a24;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* ===== フッター ===== */
+.lp-footer {
+  background: #f5f5f5;
+  padding: 20px;
+  font-size: 11px;
+  color: #aaa;
+  border-top: 1px solid #eee;
+}
+.lp-footer p { font-size: 11px; color: #999; line-height: 1.7; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<!-- ===== ヘッダー画像（参考元FV踏襲） ===== -->
+<div class="article-header-wrapper">
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664775/b689e6fc-fac8-4667-ad60-425eb2360318.png" alt="頭皮ケア調査" style="margin:0; width:100%;">
+</div>
+
+<!-- ===== 記事本文 ===== -->
+<div class="article-body">
+
+  <!-- ===== 導入（ファーストビュー） ===== -->
+  <p><br></p>
+  <p class="sb-align-center"><span class="sb-fs-21 sb-font-bold">「最近、シャンプーのたびに<br><span class="sb-bg-gum-marker">抜け毛が気になる</span>」</span></p>
+
+  <!-- 共感バブル -->
+  <div class="empathy-bubbles">
+    <div class="empathy-bubble">排水口にたまる髪、<strong>前より増えた気がする</strong>…</div>
+    <div class="empathy-bubble">枕についた抜け毛が<strong>ちょっと気になる</strong></div>
+    <div class="empathy-bubble">まだ深刻じゃないけど、<strong>今からなら間に合う？</strong></div>
+  </div>
+
+  <div class="fv-lead">
+    <p>そんな<strong>"なんとなくした不安"</strong>を感じたことはありませんか。</p>
+    <p>まだ深刻ではないけれど、少しだけ気になる——。そんな方に向けて、<strong>頭皮環境を整えるケアの選択肢</strong>として注目される「育毛剤」について、成分や使い方、続けやすさを中心に<strong>編集部が調査</strong>しました。</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ===== Section 1：抜け毛が気になり始めるタイミング ===== -->
+  <h2>抜け毛が気になり始めるタイミング</h2>
+
+  <p>人の髪は1日に50〜100本ほど自然に抜けると言われています。<br>それ自体は正常なヘアサイクルの一部ですが、<span class="sb-bg-gum-marker"><strong>「いつもより多い気がする」</strong></span>と感じるタイミングが出てくることがあります。</p>
+
+  <!-- 2×2タイルカード -->
+  <div class="tile-grid">
+    <div class="tile-card">
+      <div class="tile-card-icon season">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d47a24" stroke-width="2"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L3 23l2-2c3-3 6.82-5.08 11-6"/><path d="M20.41 8.59a2 2 0 0 0-2.82 0l-2 2a2 2 0 0 0 0 2.82l.18.18a2 2 0 0 0 2.82 0l2-2a2 2 0 0 0 0-2.82z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 .5 0 1 .09 1.5"/></svg>
+      </div>
+      <h4>季節の変わり目</h4>
+      <p>秋口や春先は抜け毛が増えやすい時期。気温・湿度の変化が頭皮に影響</p>
+    </div>
+    <div class="tile-card">
+      <div class="tile-card-icon habit">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3d5a8a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <h4>生活習慣の乱れ</h4>
+      <p>睡眠不足・偏った食事・運動不足。30〜40代は乱れが蓄積しやすい世代</p>
+    </div>
+    <div class="tile-card">
+      <div class="tile-card-icon stress">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="2"><path d="M18 15l-6-6-6 6"/><path d="M18 9l-6-6-6 6"/></svg>
+      </div>
+      <h4>ストレス</h4>
+      <p>血行や自律神経に影響し、髪への栄養が届きにくくなることも</p>
+    </div>
+    <div class="tile-card">
+      <div class="tile-card-icon wash">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a8a5a" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+      </div>
+      <h4>洗髪習慣</h4>
+      <p>洗いすぎによる乾燥、すすぎ残しによる毛穴の詰まりも頭皮に影響</p>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <p class="info-box-title">編集部メモ</p>
+    <p>こうしたタイミングで「ちょっと気になるかも」と思った方は多いはず。<br>大切なのは、気になった<span class="sb-bg-gum-marker"><strong>今のうちに頭皮環境を意識すること</strong></span>かもしれません。</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ===== Section 2：頭皮環境を整えるケア ===== -->
+  <h2>頭皮環境を整えるケアで<br>見直せるポイント</h2>
+
+  <p>抜け毛が気になったとき、まず取り組みやすいのが<strong>日々の頭皮ケア</strong>を見直すこと。3つのポイントを押さえましょう。</p>
+
+  <!-- ステップフロー -->
+  <div class="step-flow">
+    <div class="step-flow-item">
+      <h4>洗い方を見直す</h4>
+      <p>爪を立てず、指の腹でやさしくマッサージするように洗うのが基本。シャンプー前にぬるま湯で予洗いするだけでも、汚れの落ち方が変わります。</p>
+    </div>
+    <div class="step-flow-item">
+      <h4>しっかり乾かす</h4>
+      <p>自然乾燥は頭皮の雑菌繁殖につながることも。ドライヤーで根元からしっかり乾かすことが、頭皮の清潔を保つポイントです。</p>
+    </div>
+    <div class="step-flow-item">
+      <h4>頭皮の保湿</h4>
+      <p>顔や手と同じように、頭皮も乾燥するとバリア機能が低下すると言われています。頭皮用のローションや育毛剤には、保湿成分が含まれるものもあります。</p>
+    </div>
+  </div>
+
+  <!-- 矢印コネクター → 育毛剤への接続 -->
+  <div class="arrow-connector">
+    <svg width="24" height="40" viewBox="0 0 24 40"><path d="M12 0v32M4 26l8 10 8-10" fill="none" stroke="#3d7a3d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <p>ケアの延長線上にある選択肢として</p>
+  </div>
+
+  <div class="info-box green">
+    <p class="info-box-title">もう一歩踏み込んだケアを</p>
+    <p>洗い方やドライヤーの使い方を見直したうえで、<strong>もう一歩踏み込んだケア</strong>として「育毛剤」を取り入れる方が増えています。<br>医薬部外品の育毛剤は、頭皮環境を整え、<span class="sb-bg-gum-marker">育毛・発毛促進・抜け毛予防をサポートする</span>ものとして認められています。</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ===== Section 3：育毛剤の選び方チェックリスト ===== -->
+  <h2>育毛剤って何を基準に選ぶ？</h2>
+
+  <div class="checklist-header">
+    <span class="badge">編集部まとめ</span>
+    <p>押さえておきたい5つのポイント</p>
+  </div>
+
+  <ul class="checklist">
+    <li><strong>医薬部外品かどうか</strong><br><span class="sb-fs-13" style="color:#777;">効果・効能が認められた有効成分が配合されているかが目安になります</span></li>
+    <li><strong>有効成分の種類と数</strong><br><span class="sb-fs-13" style="color:#777;">育毛・発毛促進・抜け毛予防に関わる成分がどれだけ含まれているか</span></li>
+    <li><strong>刺激性への配慮</strong><br><span class="sb-fs-13" style="color:#777;">無添加設計、無香料、アルコール感の少なさなど、毎日使うものだからこそ気になるポイント</span></li>
+    <li><strong>続けやすさ</strong><br><span class="sb-fs-13" style="color:#777;">ベタつきの少なさ、容器の使いやすさ、朝晩のルーティンに組み込めるか</span></li>
+    <li><strong>価格・コスト</strong><br><span class="sb-fs-13" style="color:#777;">続けやすい価格帯かどうか。初回キャンペーンの有無もチェック</span></li>
+  </ul>
+
+  <p>これらを踏まえて、編集部が注目したのが次にご紹介する育毛剤です。</p>
+
+  <!-- ===== CTA 1（中盤） ===== -->
+  <div class="cta-wrap">
+    <a href="https://sb-mcealer01.discover-news.tokyo/articles/fLWfCuPeGysVQswlzw" class="cta-btn">
+      頭皮ケアを始める<small>公式キャンペーンを見る</small>
+    </a>
+    <p class="cta-note">※公式サイトに移動します</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ===== Section 4：チャップアップ紹介 ===== -->
+  <h2>編集部が注目した育毛剤：チャップアップ</h2>
+
+  <!-- 商品メインビジュアル（参考元：日本初＆日本で唯一の育毛剤） -->
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664802/5b7d8cdd-f6d3-4316-928a-dc3ec44298de.png" alt="チャップアップ育毛ローション">
+
+  <p>チャップアップは、<span class="sb-bg-gum-marker"><strong>6種の有効成分</strong></span>を配合した<strong>医薬部外品</strong>の育毛ローションです。</p>
+
+  <p>独自原料として赤ショウガ由来の<strong>「ジンゲルシックス&reg;」</strong>を配合している点も特徴のひとつ。ジンゲルシックス&reg;と6種の有効成分を配合した育毛剤は<strong>日本初※1＆日本で唯一※2</strong>とされています。</p>
+
+  <p class="sb-fs-10" style="color:#999;">
+    ※1 ジンゲルシックス®（ショウキョウエキス）と6種の有効成分（センブリエキス、グリチルリチン酸ジカリウム、塩酸ジフェンヒドラミン、トコフェロール酢酸エステル、D-パントテニルアルコール、アラントイン）を日本で初めて配合（株式会社天真堂調べ 2023年11月1日時点）<br>
+    ※2 上記成分を配合した日本唯一の薬用育毛剤（株式会社天真堂調べ 2023年11月1日時点）
+  </p>
+
+  <!-- 累計1200万本 -->
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664953/e837ce79-6840-4367-ab3f-7304684fe80b.png" alt="累計1200万本のチャップアップシリーズ">
+
+  <!-- 医師アドバイザリー -->
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/6439926/264001eb-4e17-4296-bd1a-b83f4ff33187.png" alt="東大医学部卒の医師とアドバイザリー契約">
+
+  <p>東大医学部卒の医師とアドバイザリー契約している育毛剤会社で、その実力は<strong>美容クリニックにも置かれるほど</strong>と紹介されています。</p>
+
+  <!-- メディア掲載実績 -->
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664840/1739b598-2ea0-4c6b-9f7d-fa089aa25331.png" alt="テレビでも紹介">
+
+  <hr class="section-divider">
+
+  <!-- 赤ショウガ・ジンゲルシックス -->
+  <h3>独自原料「ジンゲルシックス&reg;」とは</h3>
+
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664921/2596db9f-a400-459e-9857-149e43729bcd.png" alt="赤ショウガ由来のジンゲルシックス">
+
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664902/2a076b1d-742c-4c39-848e-4696bba94fc5.png" alt="赤ショウガの特徴">
+
+  <p>チャップアップが注目したのが、体を温めるパワーが詰まった<strong>「赤ショウガ」</strong>。この希少な赤ショウガから抽出したジンゲルシックス&reg;を<strong>日本で初めて育毛剤に配合</strong>しています。</p>
+
+  <p class="sb-fs-10" style="color:#999;">※2022年4月13日 TPCマーケティングリサーチ株式会社調べ</p>
+
+  <!-- ナノバブル浸透 -->
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664948/ab6680f2-faac-4f3f-bd97-de7471136c9b.png" alt="ナノバブル浸透技術">
+
+  <p>さらに、ナノバブル技法による極小気泡で有効成分が頭皮にしっかり届く※設計になっています。</p>
+  <p class="sb-fs-10" style="color:#999;">※角質層まで</p>
+
+  <hr class="section-divider">
+
+  <!-- 6種の有効成分 -->
+  <h3>業界トップクラス・<span class="sb-bg-gum-marker">6種の有効成分</span>配合</h3>
+
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665035/15ff0b5c-5254-4aee-874a-82e47559a40a.png" alt="6種の有効成分">
+
+  <table class="ingredient-table">
+    <tr>
+      <th>センブリエキス</th>
+      <td>血行促進に関わる成分として知られ、育毛剤に広く使用されています</td>
+    </tr>
+    <tr>
+      <th>グリチルリチン酸ジカリウム</th>
+      <td>頭皮の炎症を抑え、健やかな頭皮環境を保つ働きがあるとされています</td>
+    </tr>
+    <tr>
+      <th>塩酸ジフェンヒドラミン</th>
+      <td>頭皮のかゆみやフケを抑える働きがあるとされる成分です</td>
+    </tr>
+    <tr>
+      <th>アラントイン</th>
+      <td>頭皮の荒れを防ぎ、コンディションを整える働きが期待されています</td>
+    </tr>
+    <tr>
+      <th>トコフェロール酢酸エステル</th>
+      <td>ビタミンE誘導体の一種で、頭皮の血行を促す働きがあるとされています</td>
+    </tr>
+    <tr>
+      <th>D-パントテニルアルコール</th>
+      <td>毛髪に栄養を与え、頭皮を健やかに保つ成分です</td>
+    </tr>
+  </table>
+
+  <!-- 医薬部外品 -->
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665079/334eca93-ceff-407d-a586-f286124d684a.png" alt="効果効能が認められた医薬部外品">
+
+  <div class="info-box green">
+    <p class="info-box-title">チャップアップは「医薬部外品」</p>
+    <p>育毛剤の中には"保湿"のみで頭皮環境を整える製品もあります。<br>チャップアップは<span class="sb-bg-gum-marker"><strong>効果・効能が認められた医薬部外品</strong></span>として、育毛・発毛促進・抜け毛予防に関わる有効成分を配合しています。</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ===== Section 5：使い方と続けやすさ ===== -->
+  <h2>使い方と続けやすさ</h2>
+  <p class="sb-fs-15" style="color:#888;">——単品で試す導線</p>
+
+  <p>育毛剤は毎日使うものだから、<strong>使いやすさ・続けやすさ</strong>が大切です。</p>
+
+  <!-- 使い方イメージ（参考元：お風呂上がりにシュッと吹きかけ） -->
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665448/53bc7c09-9869-43da-a8a8-f22779879ef3.png" alt="チャップアップの使い方">
+
+  <h3>朝晩のルーティン例</h3>
+  <ol class="step-list">
+    <li><strong>シャンプー後、タオルドライ</strong><br>髪の水気を軽くとった状態で使用するのが基本です</li>
+    <li><strong>頭皮に直接スプレー</strong><br>気になる部分を中心に、頭皮全体にまんべんなく塗布します</li>
+    <li><strong>指の腹でやさしくなじませる</strong><br>1分ほどマッサージするように頭皮全体になじませます</li>
+    <li><strong>ドライヤーで乾かす</strong><br>根元からしっかり乾かして完了です</li>
+  </ol>
+
+  <div class="info-box">
+    <p class="info-box-title">続けやすさのポイント</p>
+    <p>・ベタつきが少なく、朝のスタイリング前にも使いやすい<br>
+    ・こだわりの<strong>ジェットノズル</strong>で液が垂れにくく、当てたいところにしっかり届く<br>
+    ・育毛剤特有の匂いがなく、匂いでバレる心配もなし<br>
+    ・朝晩の洗面台ルーティンに組み込めるシンプルさ</p>
+  </div>
+
+  <!-- ===== CTA 2（商品説明後） ===== -->
+  <div class="cta-wrap">
+    <a href="https://sb-mcealer01.discover-news.tokyo/articles/fLWfCuPeGysVQswlzw" class="cta-btn">
+      単品で試してみる<small>公式サイトはこちら</small>
+    </a>
+    <p class="cta-note">※公式サイトに移動します</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ===== Section 6：価格・キャンペーン ===== -->
+  <h2>まずは単品で試せるキャンペーン</h2>
+
+  <p>「いきなり定期は不安…」という方に向けて、チャップアップでは<strong>公式サイト限定の単品キャンペーン</strong>が実施されています。</p>
+
+  <!-- 価格ビジュアル（参考元） -->
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665153/c12ca703-cf73-4fb9-91eb-146d7c6d4e58.png" alt="初回限定3,280円">
+
+  <div class="price-box">
+    <p style="margin-bottom:8px;"><span style="display:inline-block; background:#c0392b; color:#fff; font-size:12px; font-weight:bold; padding:3px 14px; border-radius:20px;">初回購入限定キャンペーン</span></p>
+    <p style="font-size:14px; color:#999; text-decoration:line-through; margin-bottom:4px;">通常価格 8,690円（税込・送料込）</p>
+    <p style="font-size:32px; font-weight:bold; color:#c0392b; line-height:1.3; margin-bottom:4px;">3,280<span style="font-size:15px; font-weight:normal;">円（税込）</span></p>
+    <p style="margin-bottom:8px;"><span style="display:inline-block; background:#c0392b; color:#fff; font-size:13px; font-weight:bold; padding:2px 12px; border-radius:4px;">62%OFF</span></p>
+    <p class="sb-fs-13" style="color:#888;">※初回購入限定・お一人様1回限り<br>※送料込み・買い切りだから2回目は届きません</p>
+  </div>
+
+  <p class="sb-align-center" style="font-size:15px; color:#666;">なんと<strong>1日約109円※</strong>で始められます。<br>まずは1本試して、使用感や頭皮との相性を確認してみるのもひとつの方法です。</p>
+  <p class="sb-fs-10" style="color:#999;">※初回限定価格を1ヶ月（30日）で割った値段</p>
+
+  <!-- 返金保証・支払い方法 -->
+  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665178/8ed36c2e-44fd-4dc7-b6b2-6f1958a4ddf9.png" alt="30日間全額返金保証">
+
+  <p>さらに<span class="sb-bg-gum-marker"><strong>30日間の全額返金保証</strong></span>付き。「体に合うか心配…」という方でも安心して試せます。</p>
+
+  <p>クレジットカード払いだけでなく、<strong>代金引換・コンビニ後払い</strong>も選択可能。支払いは商品が届いた後でOKです。</p>
+
+  <!-- CTA GIFボタン（参考元のアニメーション付きCTA） -->
+  <div class="cta-wrap">
+    <a href="https://sb-mcealer01.discover-news.tokyo/articles/fLWfCuPeGysVQswlzw" style="text-decoration:none;">
+      <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665174/7af8043f-2a54-40c3-943f-6029553114d9.gif" alt="お得に始める" style="margin:0 auto; max-width:100%;">
+    </a>
+    <p class="cta-note">※公式サイトに移動します</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ===== Section 7：Q&A ===== -->
+  <h2>よくある質問</h2>
+
+  <div class="qa-item">
+    <div class="qa-q">育毛剤を使うと頭皮がヒリヒリしませんか？</div>
+    <div class="qa-a">チャップアップは無添加設計で作られており、刺激性に配慮されています。ただし、肌質には個人差がありますので、気になる方はまず少量から試してみることをおすすめします。</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="qa-q">匂いは気になりますか？</div>
+    <div class="qa-a">育毛剤特有の匂いがない設計のため、整髪料や香水との干渉が気になる方にも使いやすい設計です。</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="qa-q">どのくらい使い続ければいいですか？</div>
+    <div class="qa-a">頭皮環境を整えるケアは、一定期間の継続が大切と言われています。まずは1本使い切ってみて、頭皮の調子を確認するところから始めてみてください。</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="qa-q">朝だけ（夜だけ）の使用でも大丈夫ですか？</div>
+    <div class="qa-a">朝晩2回の使用が推奨されていますが、まずは無理のないペースで始めることが続けるコツです。生活リズムに合わせて取り入れてみてください。</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="qa-q">定期購入ではなく単品で購入できますか？</div>
+    <div class="qa-a">はい。公式サイトでは初回購入限定の単品キャンペーン（通常8,690円→3,280円・62%OFF）が実施されています。買い切りなので2回目は届きません。まずは1本から試すことが可能です。</div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ===== CTA 3（追いCTA） ===== -->
+  <div class="info-box green" style="text-align:center; padding:24px 16px;">
+    <p style="font-size:17px; font-weight:bold; color:#2a5c2a; margin-bottom:14px;">
+      「なんとなく気になる」今だからこそ、<br>頭皮ケアを始めてみませんか。
+    </p>
+    <div class="cta-wrap" style="padding:0;">
+      <a href="https://sb-mcealer01.discover-news.tokyo/articles/fLWfCuPeGysVQswlzw" class="cta-btn">
+        使い方・成分を確認してから申し込む<small>公式キャンペーンページへ</small>
+      </a>
+    </div>
+    <p class="cta-note" style="margin-top:8px;">※公式サイトで詳細をご確認いただけます</p>
+  </div>
+
+  <!-- 転売品注意（参考元の注意喚起踏襲） -->
+  <div class="info-box" style="margin-top:24px; border-color:#e8c0c0; background:#fef8f8;">
+    <p class="info-box-title" style="color:#c0392b; border-bottom-color:#e8c0c0;">転売品にご注意ください</p>
+    <p class="sb-fs-15">大人気商品のため、現在転売品が増えているとのこと。公式サイト以外で購入すると偽物が紛れている可能性があり、返品もできません。<br><strong>公式サイトなら30日間の全額返金保証付き</strong>&amp;初回限定で通常の半額以下で購入できます。</p>
+  </div>
+
+  <!-- 最終CTAバナー -->
+  <div class="cta-wrap" style="margin-top:24px;">
+    <a href="https://sb-mcealer01.discover-news.tokyo/articles/fLWfCuPeGysVQswlzw" style="text-decoration:none;">
+      <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665230/17bdfbb4-4a1c-45e1-aa9c-6cf371ee403c.png" alt="公式サイトをチェック" style="margin:0 auto;">
+    </a>
+    <p class="cta-note">※公式サイトに移動します</p>
+  </div>
+
+  <p><br></p>
+
+  <!-- ===== フッター免責 ===== -->
+  <div class="lp-footer" style="margin: 24px -20px -15px; padding:20px;">
+    <p>※本記事は編集部が独自に調査・制作したものです。</p>
+    <p>※個人の感想を含む表現があり、効果・効能を保証するものではありません。</p>
+    <p>※商品の詳細は公式サイトにてご確認ください。</p>
+    <p>※医薬部外品の効果・効能は各製品の承認内容に基づきます。</p>
+    <p>※画像はイメージです。</p>
+    <p style="text-align:center; margin-top:10px; color:#aaa;">&copy; 頭皮ケア調査編集部</p>
+  </div>
+
+</div><!-- /.article-body -->
+
+<!-- ===== 黄色マーカーアニメーション（IntersectionObserver / 参考元と同仕様） ===== -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var markers = document.querySelectorAll('.sb-bg-gum-marker');
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    markers.forEach(function(marker) { observer.observe(marker); });
+  } else {
+    markers.forEach(function(marker) { marker.classList.add('animated'); });
+  }
+});
+</script>
+
+</body>
+</html>
