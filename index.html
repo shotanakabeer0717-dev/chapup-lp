@@ -2,808 +2,945 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>抜け毛が増えた"気がする"なら、まず見直したい頭皮環境のこと</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>今まで育毛剤で効果がなかった方へ｜チャップアップ育毛ローション</title>
 <style>
-/* ===== Squad Beyond ベーススタイル踏襲 ===== */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+/* ===================== RESET & BASE ===================== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
 body {
-  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.8;
-  color: #000;
-  background-color: #F4F4F4;
-  -webkit-font-smoothing: antialiased;
-}
-@media screen and (min-width: 920px) {
-  body { width: 620px; margin: 0 auto; }
-}
-img { display: block; max-width: 100%; height: auto; margin: 16px 0; }
-a { text-decoration: underline; color: #4682b4; }
-
-/* ===== Article wrapper ===== */
-.article-header-wrapper img { max-width: 100%; }
-.article-body {
-  position: relative;
-  font-size: 17px;
-  line-height: 1.8;
-  padding: 15px 20px;
-  background-color: #ffffff;
-}
-.article-body p { margin: 0 0 16px; }
-.article-body h2 { font-size: 21px; margin: 0 0 14px; font-weight: bold; }
-.article-body h3 { font-size: 19px; margin: 24px 0 10px; font-weight: bold; }
-
-/* ===== テキストユーティリティ（参考元踏襲） ===== */
-.sb-align-center { display: block; text-align: center; }
-.sb-align-left { display: block; text-align: left; }
-.sb-font-bold { font-weight: bold; }
-.sb-color-red { color: #ff0000; }
-.sb-color-black { color: #000; }
-.sb-fs-10 { font-size: 10px; }
-.sb-fs-13 { font-size: 13px; }
-.sb-fs-15 { font-size: 15px; }
-.sb-fs-17 { font-size: 17px; }
-.sb-fs-19 { font-size: 19px; }
-.sb-fs-21 { font-size: 21px; }
-.sb-fs-23 { font-size: 23px; }
-.sb-fs-25 { font-size: 25px; }
-.sb-fs-27 { font-size: 27px; }
-
-/* ===== 黄色マーカーアニメーション（参考元と同仕様） ===== */
-.sb-bg-gum-marker {
-  background: linear-gradient(to right, #ffee57 50%, transparent 50%) 100% 0% / 200% 70% no-repeat;
-  transition: background-position 1s ease-out;
-}
-.sb-bg-gum-marker.animated {
-  background-position: bottom 0 right 100% !important;
-}
-
-/* ===== セクション区切り ===== */
-.section-divider {
-  border: none;
-  border-top: 1px solid #eee;
-  margin: 28px 0;
-}
-
-/* ===== FV 共感バブル ===== */
-.empathy-bubbles {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 20px 0;
-}
-.empathy-bubble {
-  position: relative;
-  background: #f5f5f5;
-  border-radius: 18px;
-  padding: 12px 16px;
-  font-size: 15px;
-  color: #444;
-  max-width: 88%;
-  line-height: 1.6;
-}
-.empathy-bubble::before {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 20px;
-  width: 16px;
-  height: 16px;
-  background: #f5f5f5;
-  border-radius: 50%;
-}
-.empathy-bubble:nth-child(even) {
-  align-self: flex-end;
-  background: #eef5ee;
-}
-.empathy-bubble:nth-child(even)::before {
-  left: auto;
-  right: 20px;
-  background: #eef5ee;
-}
-.empathy-bubble strong { color: #222; }
-
-.fv-lead {
-  background: linear-gradient(135deg, #f8faf8, #eef3ee);
-  border-radius: 10px;
-  padding: 18px 16px;
-  margin: 20px 0;
-  border-left: 4px solid #3d7a3d;
-}
-.fv-lead p { font-size: 15px; margin-bottom: 8px; }
-.fv-lead p:last-child { margin-bottom: 0; }
-
-/* ===== タイルカード（Section 1：抜け毛タイミング） ===== */
-.tile-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin: 20px 0;
-}
-.tile-card {
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #333;
   background: #fff;
-  border: 1px solid #e8e8e8;
-  border-radius: 10px;
-  padding: 16px 14px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,.03);
-  transition: box-shadow .2s;
-}
-.tile-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.07); }
-.tile-card-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 10px;
-}
-.tile-card-icon.season  { background: #fef0e8; }
-.tile-card-icon.habit   { background: #e8f0fe; }
-.tile-card-icon.stress  { background: #fef8e8; }
-.tile-card-icon.wash    { background: #e8fef0; }
-.tile-card h4 {
-  font-size: 14px;
-  font-weight: bold;
-  color: #222;
-  margin: 0 0 6px;
-}
-.tile-card p {
-  font-size: 12.5px;
-  color: #777;
-  margin: 0;
-  line-height: 1.6;
-  text-align: left;
-}
-
-/* ===== ステップフロー（Section 2：見直しポイント） ===== */
-.step-flow {
-  position: relative;
-  margin: 20px 0;
-  padding-left: 28px;
-}
-.step-flow::before {
-  content: "";
-  position: absolute;
-  left: 13px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, #c5dcc5, #3d7a3d);
-  border-radius: 1px;
-}
-.step-flow-item {
-  position: relative;
-  padding: 0 0 24px 20px;
-}
-.step-flow-item:last-child { padding-bottom: 0; }
-.step-flow-item::before {
-  content: "";
-  position: absolute;
-  left: -22px;
-  top: 4px;
-  width: 12px;
-  height: 12px;
-  background: #3d7a3d;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 2px #c5dcc5;
-}
-.step-flow-item h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #2a5c2a;
-  margin: 0 0 4px;
-}
-.step-flow-item p {
-  font-size: 14.5px;
-  color: #555;
-  margin: 0;
-  line-height: 1.7;
-}
-
-/* ===== 矢印コネクター ===== */
-.arrow-connector {
-  text-align: center;
-  margin: 20px 0;
-  color: #3d7a3d;
-}
-.arrow-connector svg {
-  display: block;
+  max-width: 640px;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
-.arrow-connector p {
-  font-size: 14px;
-  font-weight: bold;
-  color: #3d7a3d;
-  margin: 8px 0 0;
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; }
+
+/* ===================== COLOR TOKENS ===================== */
+:root {
+  --primary:       #1a7a4a;   /* チャップアップ緑 */
+  --primary-dark:  #115c36;
+  --primary-light: #eaf5ef;
+  --primary-mid:   #2a9960;
+
+  /*
+    CTA ボタン: オレンジ系
+    - sRGB #F05A22（明度48、コントラスト比 on white ≈ 4.7:1 → WCAG AA クリア）
+    - iOS/Android どちらも彩度が高すぎず「温かみのある目立つ橙」として安定表示
+    - 深緑の補色側に位置するので画面全体でのコントラストも良好
+  */
+  --cta:           #F05A22;
+  --cta-dark:      #c94918;
+  --cta-text:      #ffffff;
+
+  --accent-red:    #d4232b;   /* 価格・OFF表示のみ */
+  --text:          #222;
+  --text-sub:      #666;
+  --border:        #d8ece0;
+  --bg-section:    #f4fbf6;
+  --bg-dark:       #163322;
+  --white:         #fff;
 }
 
-/* ===== チェックリストヘッダー ===== */
-.checklist-header {
-  text-align: center;
-  background: linear-gradient(135deg, #f2f8f2, #e8f0e8);
-  border: 1px solid #c5dcc5;
-  border-radius: 10px;
-  padding: 16px;
-  margin: 0 0 16px;
+/* ===================== LAYOUT ===================== */
+.sec         { padding: 36px 20px; }
+.sec-green   { background: var(--bg-section); }
+.sec-dark    { background: var(--bg-dark); }
+.sec-white   { background: #fff; }
+
+.divider {
+  width: 34px; height: 3px;
+  background: var(--primary);
+  margin: 10px auto 20px;
+  border-radius: 2px;
 }
-.checklist-header .badge {
+.divider-w { background: rgba(255,255,255,.45); }
+
+/* ===================== HEADINGS ===================== */
+.sec-head { text-align: center; margin-bottom: 22px; }
+.sec-head .label {
   display: inline-block;
-  background: #3d7a3d;
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 3px 14px;
-  border-radius: 20px;
-  margin-bottom: 8px;
-}
-.checklist-header p {
-  font-size: 15px;
-  font-weight: bold;
-  color: #2a5c2a;
-  margin: 0;
-}
-
-/* ===== 囲みボックス ===== */
-.info-box {
-  background: #f9f9f2;
-  border: 1px solid #e0dcc8;
-  border-radius: 8px;
-  padding: 18px 16px;
-  margin: 20px 0;
-}
-.info-box.green {
-  background: #f2f8f2;
-  border-color: #c5dcc5;
-}
-.info-box-title {
-  font-size: 15px;
-  font-weight: bold;
-  color: #3d7a3d;
+  font-size: 10px; font-weight: 700; letter-spacing: .13em;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 3px 10px; border-radius: 2px;
   margin-bottom: 10px;
-  padding-bottom: 6px;
-  border-bottom: 1px dashed #c5dcc5;
 }
-.info-box p { font-size: 15px; line-height: 1.8; }
+.sec-head .label-w { color: rgba(255,255,255,.65); border-color: rgba(255,255,255,.35); }
+.sec-head h2 { font-size: 20px; font-weight: 900; line-height: 1.5; color: var(--text); }
+.sec-head h2.w { color: #fff; }
+.sec-head .sub { font-size: 13px; color: var(--text-sub); margin-top: 7px; }
+.sec-head .sub.w { color: rgba(255,255,255,.7); }
+.u { background: linear-gradient(transparent 55%, rgba(155,215,175,.55) 55%); }
 
-/* ===== チェックリスト ===== */
-.checklist { list-style: none; margin: 16px 0; padding: 0; }
-.checklist li {
-  position: relative;
-  padding: 12px 14px 12px 40px;
-  background: #fafaf5;
+/* ===================== HEADER BAND ===================== */
+.header-band {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 9px 16px;
+  font-size: 12px; font-weight: 700; letter-spacing: .04em;
+}
+
+/* ===================== CTA BUTTONS ===================== */
+/* メインCTA（オレンジ） */
+/*
+  スクワッドビヨンドなど外部ツールが
+  a { color: ... } でリンク色を上書きするケースに対応。
+  全疑似クラスに !important を付与し、かつ -webkit-text-fill-color で
+  WebKitの独自上書きも封じる。
+*/
+.btn-cta,
+.btn-cta:link,
+.btn-cta:visited,
+.btn-cta:hover,
+.btn-cta:focus,
+.btn-cta:active {
+  display: block; width: 100%;
+  background: #F05A22 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  font-size: 16px; font-weight: 900;
+  padding: 17px 20px;
   border-radius: 6px;
-  margin-bottom: 8px;
-  font-size: 15px;
-  border: 1px solid #eee;
-}
-.checklist li::before {
-  content: "✓";
-  position: absolute;
-  left: 14px; top: 12px;
-  color: #3d7a3d;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/* ===== 成分テーブル ===== */
-.ingredient-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 16px 0;
-  font-size: 14px;
-}
-.ingredient-table th, .ingredient-table td {
-  padding: 10px 12px;
-  border: 1px solid #ddd;
-  text-align: left;
-  vertical-align: top;
-}
-.ingredient-table th {
-  background: #f2f8f2;
-  color: #2a5c2a;
-  font-weight: bold;
-  width: 38%;
-}
-
-/* ===== ステップリスト ===== */
-.step-list { counter-reset: step; list-style: none; margin: 16px 0; padding: 0; }
-.step-list li {
-  counter-increment: step;
-  position: relative;
-  padding: 14px 14px 14px 52px;
-  margin-bottom: 10px;
-  background: #f9faf9;
-  border-radius: 8px;
-  font-size: 15px;
-  border: 1px solid #e5ebe5;
-}
-.step-list li::before {
-  content: counter(step);
-  position: absolute;
-  left: 14px; top: 14px;
-  width: 28px; height: 28px;
-  background: #3d7a3d;
-  color: #fff;
-  border-radius: 50%;
-  font-size: 14px;
-  font-weight: bold;
-  display: flex; align-items: center; justify-content: center;
-}
-
-/* ===== 価格ボックス ===== */
-.price-box {
-  text-align: center;
-  background: linear-gradient(135deg, #fffef5 0%, #fff8e1 100%);
-  border: 2px solid #e0c860;
-  border-radius: 12px;
-  padding: 24px 16px;
-  margin: 24px 0;
-}
-
-/* ===== CTAボタン（参考元のオレンジ系踏襲） ===== */
-.cta-wrap { text-align: center; padding: 10px 0; }
-.cta-btn {
-  display: inline-block;
-  width: 90%;
-  max-width: 460px;
-  padding: 18px 20px;
-  background: linear-gradient(180deg, #e8913a 0%, #d47a24 100%);
-  color: #fff !important;
-  font-size: 17px;
-  font-weight: bold;
-  text-align: center;
+  text-align: center; letter-spacing: .04em;
+  border: none; cursor: pointer;
+  line-height: 1.45;
+  box-shadow: 0 3px 10px rgba(240,90,34,.35);
+  -webkit-tap-highlight-color: transparent;
   text-decoration: none !important;
-  border-radius: 60px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 4px 14px rgba(212,122,36,.35);
-  transition: transform .15s, box-shadow .15s;
-  line-height: 1.5;
+  transition: opacity .15s;
 }
-.cta-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(212,122,36,.45);
-}
-.cta-btn small { display: block; font-size: 12px; font-weight: normal; margin-top: 4px; opacity: .9; }
-.cta-note { text-align: center; font-size: 11px; color: #999; margin-top: 6px; }
-
-/* ===== Q&A ===== */
-.qa-item { margin-bottom: 18px; }
-.qa-q {
-  font-size: 15px;
-  font-weight: bold;
-  color: #000;
-  padding: 12px 14px 12px 42px;
-  background: #f2f8f2;
-  border-radius: 8px 8px 0 0;
-  position: relative;
-  border: 1px solid #d5e5d5;
-  border-bottom: none;
-}
-.qa-q::before {
-  content: "Q";
-  position: absolute; left: 14px; top: 12px;
-  color: #3d7a3d;
-  font-size: 17px;
-  font-weight: bold;
-}
-.qa-a {
-  font-size: 15px;
-  color: #444;
-  line-height: 1.85;
-  padding: 14px 14px 14px 42px;
-  background: #fafafa;
-  border-radius: 0 0 8px 8px;
-  position: relative;
-  border: 1px solid #eee;
-}
-.qa-a::before {
-  content: "A";
-  position: absolute; left: 14px; top: 14px;
-  color: #d47a24;
-  font-size: 17px;
-  font-weight: bold;
+.btn-cta:active { opacity: .88; }
+.btn-cta .sub,
+.btn-cta:link .sub,
+.btn-cta:visited .sub {
+  display: block; font-size: 11px; font-weight: 500; opacity: .88; margin-top: 2px;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 
-/* ===== フッター ===== */
-.lp-footer {
-  background: #f5f5f5;
-  padding: 20px;
-  font-size: 11px;
-  color: #aaa;
-  border-top: 1px solid #eee;
+/* ===================== FV ===================== */
+.fv { background: #fff; border-bottom: 3px solid var(--primary); }
+.fv-catch { padding: 22px 20px 0; text-align: center; }
+.fv-eyebrow {
+  display: inline-block; background: var(--primary); color: #fff;
+  font-size: 11px; font-weight: 700; padding: 4px 14px;
+  border-radius: 2px; letter-spacing: .06em; margin-bottom: 14px;
 }
-.lp-footer p { font-size: 11px; color: #999; line-height: 1.7; margin-bottom: 6px; }
+.fv-catch h1 { font-size: 22px; font-weight: 900; line-height: 1.5; margin-bottom: 12px; }
+.fv-catch h1 em { font-style: normal; color: var(--primary); background: linear-gradient(transparent 55%, rgba(155,215,175,.5) 55%); }
+.fv-catch .body { font-size: 13px; line-height: 1.85; color: #444; text-align: left; }
+
+/* FV price box */
+.fv-price-box {
+  margin: 18px 20px 0;
+  border: 2px solid var(--primary); border-radius: 8px;
+  padding: 16px; text-align: center; background: var(--bg-section);
+}
+.fv-price-box .pl { font-size: 12px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+.fv-price-box .pnum { font-size: 46px; font-weight: 900; color: var(--accent-red); line-height: 1; margin-bottom: 2px; }
+.fv-price-box .pnum span { font-size: 18px; }
+.fv-price-box .psub { font-size: 11px; color: var(--text-sub); margin-bottom: 10px; }
+.badge-row { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.badge-row .bd { background: var(--primary); color: #fff; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 3px; }
+
+.fv-cta { padding: 14px 20px 22px; }
+.cta-note { font-size: 11px; color: var(--text-sub); text-align: center; margin-top: 7px; line-height: 1.65; }
+.cta-note.w { color: rgba(255,255,255,.55); }
+
+/* ===================== PAIN ===================== */
+.pain-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.pain-list li {
+  background: #fff; border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-red);
+  border-radius: 0 6px 6px 0;
+  padding: 12px 14px 12px 40px;
+  font-size: 14px; font-weight: 700; position: relative; line-height: 1.5;
+}
+.pain-list li::before {
+  content: '✕'; position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+  color: var(--accent-red); font-size: 13px; font-weight: 900;
+}
+.closing-box {
+  margin-top: 18px; background: var(--bg-dark); color: #fff;
+  border-radius: 8px; padding: 16px; text-align: center;
+  font-size: 14px; line-height: 1.85;
+}
+.closing-box strong { color: #8ed4a8; }
+
+/* ===================== WHY FAIL ===================== */
+.compare-card { border-radius: 8px; padding: 14px; margin-bottom: 10px; font-size: 13px; line-height: 1.8; }
+.compare-card.ng { background: #fff5f5; border: 1.5px solid #e8b0b0; }
+.compare-card.ok { background: var(--primary-light); border: 1.5px solid var(--border); }
+.compare-card .clabel { font-size: 11px; font-weight: 900; letter-spacing: .07em; margin-bottom: 7px; display: block; }
+.compare-card.ng .clabel { color: var(--accent-red); }
+.compare-card.ok .clabel { color: var(--primary); }
+
+/* ===================== FEATURES (4点) ===================== */
+/* 公式画像で表現するので特別なスタイル不要 */
+
+/* ===================== INGREDIENT ===================== */
+.ingredient-box {
+  background: #fff; border: 1.5px solid var(--primary); border-radius: 8px;
+  padding: 16px 14px; margin-top: 14px;
+}
+.ingredient-box .ititle {
+  font-size: 12px; font-weight: 700; color: var(--primary);
+  letter-spacing: .07em; margin-bottom: 9px; text-align: center;
+}
+.ingredient-box .ilist { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+.ingredient-box .ilist li {
+  font-size: 13px; padding-left: 16px; position: relative; color: var(--text);
+}
+.ingredient-box .ilist li::before {
+  content: '●'; position: absolute; left: 0; color: var(--primary); font-size: 7px; top: 6px;
+}
+
+/* ===================== AUTHORITY ===================== */
+.auth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.auth-item {
+  background: #fff; border: 1px solid var(--border);
+  border-top: 3px solid var(--primary);
+  border-radius: 0 0 6px 6px; padding: 12px; text-align: center;
+}
+.auth-item .aval { font-size: 22px; font-weight: 900; color: var(--primary-dark); line-height: 1.1; margin-bottom: 3px; }
+.auth-item .aval span { font-size: 12px; font-weight: 500; }
+.auth-item .alabel { font-size: 11px; color: var(--text-sub); line-height: 1.5; }
+
+/* ===================== VOICE ===================== */
+.voice-card {
+  background: #fff; border: 1px solid var(--border); border-radius: 8px;
+  padding: 14px; margin-bottom: 10px;
+}
+.voice-card:last-of-type { margin-bottom: 0; }
+.voice-head { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
+.voice-avatar {
+  width: 36px; height: 36px; background: var(--primary); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 12px; font-weight: 900; flex-shrink: 0;
+}
+.voice-meta .vname { font-size: 13px; font-weight: 700; }
+.voice-meta .vage { font-size: 11px; color: var(--text-sub); }
+.stars { color: #e0960a; font-size: 12px; letter-spacing: 1px; }
+.voice-body { font-size: 13px; line-height: 1.85; color: #444; }
+.voice-body strong { color: var(--primary-dark); font-weight: 900; }
+
+/* ===================== GUARANTEE ===================== */
+.guarantee-main {
+  background: var(--primary-light); border: 2px solid var(--primary);
+  border-radius: 10px; padding: 20px 16px; text-align: center; margin-bottom: 14px;
+}
+.guarantee-main .g-icon { font-size: 34px; margin-bottom: 8px; }
+.guarantee-main .g-title { font-size: 18px; font-weight: 900; color: var(--primary-dark); margin-bottom: 8px; line-height: 1.45; }
+.guarantee-main .g-desc { font-size: 13px; color: #444; line-height: 1.85; }
+.guarantee-main .g-desc strong { color: var(--primary-dark); }
+
+.guarantee-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.guarantee-list li {
+  background: #fff; border: 1px solid var(--border); border-radius: 6px;
+  padding: 11px 14px 11px 36px; font-size: 13px; font-weight: 700; position: relative;
+}
+.guarantee-list li::before {
+  content: '✓'; position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+  color: var(--primary); font-size: 14px; font-weight: 900;
+}
+
+/* ===================== OFFER ===================== */
+.offer-intro { font-size: 14px; line-height: 1.85; margin-bottom: 18px; }
+.offer-intro strong { color: var(--primary-dark); font-weight: 900; }
+
+/* セット価格カード */
+.set-cards { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+.set-card {
+  background: #fff; border: 1.5px solid var(--border); border-radius: 8px;
+  padding: 14px 16px; display: flex; align-items: center; gap: 14px;
+}
+.set-card.main { border-color: var(--primary); background: var(--primary-light); }
+.set-card .sc-label { font-size: 11px; font-weight: 700; color: var(--text-sub); flex-shrink: 0; min-width: 54px; text-align: center; }
+.set-card.main .sc-label { color: var(--primary); }
+.set-card .sc-body { flex: 1; }
+.set-card .sc-body .sct { font-size: 14px; font-weight: 900; color: var(--text); margin-bottom: 2px; }
+.set-card.main .sc-body .sct { color: var(--primary-dark); }
+.set-card .sc-body .scs { font-size: 11px; color: var(--text-sub); }
+.set-card .sc-price { text-align: right; flex-shrink: 0; }
+.set-card .sc-price .sp { font-size: 20px; font-weight: 900; color: var(--accent-red); line-height: 1; }
+.set-card .sc-price .sp small { font-size: 11px; }
+.set-card .sc-price .spp { font-size: 10px; color: var(--text-sub); }
+.set-card .sc-badge {
+  display: inline-block; background: var(--accent-red); color: #fff;
+  font-size: 9px; font-weight: 900; padding: 2px 7px; border-radius: 3px; margin-bottom: 3px;
+}
+
+.scarcity {
+  background: #fff8f8; border: 1.5px solid #f0c0c0; border-radius: 6px;
+  padding: 12px; text-align: center; font-size: 13px; font-weight: 700; color: var(--accent-red);
+  line-height: 1.65; margin-bottom: 12px;
+}
+
+/* ===================== QUIZ ===================== */
+.quiz-intro-box {
+  background: #fff; border: 1px solid var(--border); border-radius: 8px;
+  padding: 14px; text-align: center; font-size: 13px; line-height: 1.8; margin-bottom: 18px;
+}
+.quiz-intro-box strong { color: var(--primary-dark); }
+
+.quiz-block { display: block; }
+.quiz-block.hidden { display: none; }
+.quiz-q-label {
+  background: var(--primary); color: #fff; font-size: 14px; font-weight: 900;
+  padding: 12px 16px; border-radius: 6px 6px 0 0; line-height: 1.5;
+}
+.quiz-options {
+  list-style: none; background: #fff;
+  border: 1px solid var(--border); border-top: none;
+  border-radius: 0 0 6px 6px; overflow: hidden; margin-bottom: 14px;
+}
+.quiz-options li button {
+  display: block; width: 100%; background: #fff; border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 16px; font-size: 13px; font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500; color: var(--text); text-align: left; cursor: pointer;
+  -webkit-tap-highlight-color: transparent; transition: background .12s;
+}
+.quiz-options li:last-child button { border-bottom: none; }
+.quiz-options li button:hover,
+.quiz-options li button:active { background: var(--primary-light); }
+
+/* ===================== OFFER REVEAL ===================== */
+.offer-reveal { display: none; }
+.offer-reveal.show { display: block; }
+.reveal-card {
+  background: var(--primary-light); border: 2px solid var(--primary); border-radius: 10px;
+  padding: 20px 16px; text-align: center;
+}
+.reveal-card .rv-tag {
+  display: inline-block; background: var(--primary); color: #fff;
+  font-size: 12px; font-weight: 900; padding: 5px 14px; border-radius: 3px; margin-bottom: 12px;
+}
+.reveal-card .rv-title { font-size: 16px; font-weight: 900; color: var(--primary-dark); margin-bottom: 8px; line-height: 1.5; }
+.reveal-card .rv-price { font-size: 44px; font-weight: 900; color: var(--accent-red); line-height: 1; margin-bottom: 3px; }
+.reveal-card .rv-price span { font-size: 18px; }
+.reveal-card .rv-note { font-size: 11px; color: var(--text-sub); margin-bottom: 16px; }
+
+/* ===================== CAUTION ===================== */
+.caution-card {
+  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.2);
+  border-radius: 8px; padding: 16px; color: rgba(255,255,255,.88);
+  font-size: 13px; line-height: 1.85; margin-bottom: 18px;
+}
+.caution-card .ct { font-size: 14px; font-weight: 900; color: #fff; margin-bottom: 9px; display: flex; align-items: center; gap: 5px; }
+.caution-card strong { color: #8ed4a8; }
+
+/* ===================== SUPPORT ===================== */
+.support-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.support-list li a {
+  display: flex; align-items: center; gap: 10px;
+  background: #fff; border: 1px solid var(--border); border-radius: 6px;
+  padding: 11px 14px; font-size: 13px; font-weight: 700; color: var(--primary-dark);
+}
+.support-list li a .si { font-size: 18px; }
+
+/* ===================== STICKY CTA ===================== */
+.sticky-cta {
+  position: fixed; bottom: 0; left: 0; right: 0; max-width: 640px; margin: 0 auto;
+  z-index: 200; background: #fff; border-top: 2px solid var(--primary);
+  padding: 9px 14px; display: flex; align-items: center; gap: 10px;
+  box-shadow: 0 -3px 10px rgba(0,0,0,.12);
+  transform: translateY(100%); transition: transform .3s ease;
+}
+.sticky-cta.visible { transform: translateY(0); }
+.sticky-price { flex-shrink: 0; text-align: center; line-height: 1.2; }
+.sticky-price .spl { font-size: 9px; color: var(--text-sub); display: block; }
+.sticky-price .spn { font-size: 21px; font-weight: 900; color: var(--accent-red); }
+.sticky-price .spn span { font-size: 11px; }
+.sticky-btn,
+.sticky-btn:link,
+.sticky-btn:visited,
+.sticky-btn:hover,
+.sticky-btn:focus,
+.sticky-btn:active {
+  flex: 1; display: block;
+  background: #F05A22 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  font-size: 14px; font-weight: 900; padding: 12px 12px;
+  border-radius: 6px; text-align: center; line-height: 1.4;
+  border: none; cursor: pointer;
+  box-shadow: 0 2px 7px rgba(240,90,34,.3);
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none !important;
+}
+.sticky-btn .sbs {
+  display: block; font-size: 10px; font-weight: 500; opacity: .85;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* ===================== FOOTER ===================== */
+.footer { background: #0e2018; padding: 22px 20px; text-align: center; }
+.footer p { color: rgba(255,255,255,.38); font-size: 10px; line-height: 1.85; }
+
+/* ===================== UTILS ===================== */
+.mt8  { margin-top: 8px; }
+.mt12 { margin-top: 12px; }
+.mt16 { margin-top: 16px; }
+.mt20 { margin-top: 20px; }
+.mt24 { margin-top: 24px; }
+.oi   { width: 100%; display: block; }   /* official-img */
+.note { font-size: 11px; color: var(--text-sub); line-height: 1.65; margin-top: 6px; }
 </style>
 </head>
 <body>
 
-<!-- ===== ヘッダー画像（参考元FV踏襲） ===== -->
-<div class="article-header-wrapper">
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664775/b689e6fc-fac8-4667-ad60-425eb2360318.png" alt="頭皮ケア調査" style="margin:0; width:100%;">
+<!-- ===== STICKY CTA ===== -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-price">
+    <span class="spl">初回限定</span>
+    <div class="spn"><span>¥</span>2,480</div>
+  </div>
+  <a href="#product_id" class="sticky-btn">
+    今すぐ申し込む（初回限定）
+    <span class="sbs">返金保証付き｜送料無料</span>
+  </a>
 </div>
 
-<!-- ===== 記事本文 ===== -->
-<div class="article-body">
+<!-- ===== HEADER BAND ===== -->
+<div class="header-band">⚠️ ご購入は一世帯1セットまで｜在庫に限りがございます</div>
 
-  <!-- ===== 導入（ファーストビュー） ===== -->
-  <p><br></p>
-  <p class="sb-align-center"><span class="sb-fs-21 sb-font-bold">「最近、シャンプーのたびに<br><span class="sb-bg-gum-marker">抜け毛が気になる</span>」</span></p>
+<!-- ======================================================
+     FV
+     ====================================================== -->
+<section class="fv">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_kv_head.png" alt="シリーズ累計1,000万本突破">
 
-  <!-- 共感バブル -->
-  <div class="empathy-bubbles">
-    <div class="empathy-bubble">排水口にたまる髪、<strong>前より増えた気がする</strong>…</div>
-    <div class="empathy-bubble">枕についた抜け毛が<strong>ちょっと気になる</strong></div>
-    <div class="empathy-bubble">まだ深刻じゃないけど、<strong>今からなら間に合う？</strong></div>
+  <div class="fv-catch">
+    <span class="fv-eyebrow">今まで育毛剤で効果がなかった方へ</span>
+    <h1>「育毛剤を試したけど<br><em>変化がなかった」</em><br>その理由、わかりますか？</h1>
+    <p class="body">
+      多くの育毛剤は「保湿」で頭皮環境を整えるだけ。<br>
+      チャップアップは<strong>日本初・日本唯一の成分配合</strong>＋<strong>ナノバブル浸透技術</strong>で、有効成分を角質層まで届けます。<br>
+      シリーズ累計<strong>1,000万本</strong>※が選ばれ続けてきた理由がここにあります。
+    </p>
   </div>
 
-  <div class="fv-lead">
-    <p>そんな<strong>"なんとなくした不安"</strong>を感じたことはありませんか。</p>
-    <p>まだ深刻ではないけれど、少しだけ気になる——。そんな方に向けて、<strong>頭皮環境を整えるケアの選択肢</strong>として注目される「育毛剤」について、成分や使い方、続けやすさを中心に<strong>編集部が調査</strong>しました。</p>
-  </div>
-
-  <hr class="section-divider">
-
-  <!-- ===== Section 1：抜け毛が気になり始めるタイミング ===== -->
-  <h2>抜け毛が気になり始めるタイミング</h2>
-
-  <p>人の髪は1日に50〜100本ほど自然に抜けると言われています。<br>それ自体は正常なヘアサイクルの一部ですが、<span class="sb-bg-gum-marker"><strong>「いつもより多い気がする」</strong></span>と感じるタイミングが出てくることがあります。</p>
-
-  <!-- 2×2タイルカード -->
-  <div class="tile-grid">
-    <div class="tile-card">
-      <div class="tile-card-icon season">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d47a24" stroke-width="2"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L3 23l2-2c3-3 6.82-5.08 11-6"/><path d="M20.41 8.59a2 2 0 0 0-2.82 0l-2 2a2 2 0 0 0 0 2.82l.18.18a2 2 0 0 0 2.82 0l2-2a2 2 0 0 0 0-2.82z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 .5 0 1 .09 1.5"/></svg>
-      </div>
-      <h4>季節の変わり目</h4>
-      <p>秋口や春先は抜け毛が増えやすい時期。気温・湿度の変化が頭皮に影響</p>
+  <div class="fv-price-box">
+    <div class="pl">初回限定 特別価格（買い切り・2回目は届きません）</div>
+    <div class="pnum"><span>¥</span>2,480<span>（税込）</span></div>
+    <div class="psub">通常8,690円 → 71%OFF</div>
+    <div class="badge-row">
+      <span class="bd">30日間返金保証</span>
+      <span class="bd">東大医学部卒医師監修</span>
+      <span class="bd">医薬部外品</span>
+      <span class="bd">送料無料</span>
     </div>
-    <div class="tile-card">
-      <div class="tile-card-icon habit">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3d5a8a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-      </div>
-      <h4>生活習慣の乱れ</h4>
-      <p>睡眠不足・偏った食事・運動不足。30〜40代は乱れが蓄積しやすい世代</p>
-    </div>
-    <div class="tile-card">
-      <div class="tile-card-icon stress">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="2"><path d="M18 15l-6-6-6 6"/><path d="M18 9l-6-6-6 6"/></svg>
-      </div>
-      <h4>ストレス</h4>
-      <p>血行や自律神経に影響し、髪への栄養が届きにくくなることも</p>
-    </div>
-    <div class="tile-card">
-      <div class="tile-card-icon wash">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a8a5a" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-      </div>
-      <h4>洗髪習慣</h4>
-      <p>洗いすぎによる乾燥、すすぎ残しによる毛穴の詰まりも頭皮に影響</p>
-    </div>
+    <p class="note mt8">※2023年10月ソーシャルテック調べ</p>
   </div>
 
-  <div class="info-box">
-    <p class="info-box-title">編集部メモ</p>
-    <p>こうしたタイミングで「ちょっと気になるかも」と思った方は多いはず。<br>大切なのは、気になった<span class="sb-bg-gum-marker"><strong>今のうちに頭皮環境を意識すること</strong></span>かもしれません。</p>
+  <div class="fv-cta">
+    <a href="#product_id" class="btn-cta">
+      初回2,480円（税込）で今すぐ試す
+      <span class="sub">↓ 買い切り・2回目は届きません</span>
+    </a>
+    <p class="cta-note">30日間返金保証付き｜送料無料</p>
   </div>
+</section>
 
-  <hr class="section-divider">
-
-  <!-- ===== Section 2：頭皮環境を整えるケア ===== -->
-  <h2>頭皮環境を整えるケアで<br>見直せるポイント</h2>
-
-  <p>抜け毛が気になったとき、まず取り組みやすいのが<strong>日々の頭皮ケア</strong>を見直すこと。3つのポイントを押さえましょう。</p>
-
-  <!-- ステップフロー -->
-  <div class="step-flow">
-    <div class="step-flow-item">
-      <h4>洗い方を見直す</h4>
-      <p>爪を立てず、指の腹でやさしくマッサージするように洗うのが基本。シャンプー前にぬるま湯で予洗いするだけでも、汚れの落ち方が変わります。</p>
-    </div>
-    <div class="step-flow-item">
-      <h4>しっかり乾かす</h4>
-      <p>自然乾燥は頭皮の雑菌繁殖につながることも。ドライヤーで根元からしっかり乾かすことが、頭皮の清潔を保つポイントです。</p>
-    </div>
-    <div class="step-flow-item">
-      <h4>頭皮の保湿</h4>
-      <p>顔や手と同じように、頭皮も乾燥するとバリア機能が低下すると言われています。頭皮用のローションや育毛剤には、保湿成分が含まれるものもあります。</p>
-    </div>
+<!-- ======================================================
+     PAIN
+     ====================================================== -->
+<section class="sec sec-green">
+  <div class="sec-head">
+    <span class="label">PAIN POINT</span>
+    <h2>こんな悩み、<br>抱えていませんか？</h2>
+    <div class="divider"></div>
   </div>
-
-  <!-- 矢印コネクター → 育毛剤への接続 -->
-  <div class="arrow-connector">
-    <svg width="24" height="40" viewBox="0 0 24 40"><path d="M12 0v32M4 26l8 10 8-10" fill="none" stroke="#3d7a3d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <p>ケアの延長線上にある選択肢として</p>
-  </div>
-
-  <div class="info-box green">
-    <p class="info-box-title">もう一歩踏み込んだケアを</p>
-    <p>洗い方やドライヤーの使い方を見直したうえで、<strong>もう一歩踏み込んだケア</strong>として「育毛剤」を取り入れる方が増えています。<br>医薬部外品の育毛剤は、頭皮環境を整え、<span class="sb-bg-gum-marker">育毛・発毛促進・抜け毛予防をサポートする</span>ものとして認められています。</p>
-  </div>
-
-  <hr class="section-divider">
-
-  <!-- ===== Section 3：育毛剤の選び方チェックリスト ===== -->
-  <h2>育毛剤って何を基準に選ぶ？</h2>
-
-  <div class="checklist-header">
-    <span class="badge">編集部まとめ</span>
-    <p>押さえておきたい5つのポイント</p>
-  </div>
-
-  <ul class="checklist">
-    <li><strong>医薬部外品かどうか</strong><br><span class="sb-fs-13" style="color:#777;">効果・効能が認められた有効成分が配合されているかが目安になります</span></li>
-    <li><strong>有効成分の種類と数</strong><br><span class="sb-fs-13" style="color:#777;">育毛・発毛促進・抜け毛予防に関わる成分がどれだけ含まれているか</span></li>
-    <li><strong>刺激性への配慮</strong><br><span class="sb-fs-13" style="color:#777;">無添加設計、無香料、アルコール感の少なさなど、毎日使うものだからこそ気になるポイント</span></li>
-    <li><strong>続けやすさ</strong><br><span class="sb-fs-13" style="color:#777;">ベタつきの少なさ、容器の使いやすさ、朝晩のルーティンに組み込めるか</span></li>
-    <li><strong>価格・コスト</strong><br><span class="sb-fs-13" style="color:#777;">続けやすい価格帯かどうか。初回キャンペーンの有無もチェック</span></li>
+  <ul class="pain-list">
+    <li>40代を過ぎてから、明らかに髪が薄くなってきた</li>
+    <li>育毛剤を試してみたが、特に変化を感じられなかった</li>
+    <li>クリニックに行くのはコスト・心理的にハードルが高い</li>
+    <li>ヘアスタイルが決まらなくなり、写真を避けるようになった</li>
+    <li>頭皮のべたつき・かゆみなどのトラブルも気になっている</li>
   </ul>
 
-  <p>これらを踏まえて、編集部が注目したのが次にご紹介する育毛剤です。</p>
+  <img class="oi mt16" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_thinhair_a01.png" alt="あなたの薄毛はどのタイプ？">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_thinhair_a02.png" alt="幅広い世代から愛されています">
 
-  <!-- ===== CTA 1（中盤） ===== -->
-  <div class="cta-wrap">
-    <a href="https://sb-mcealer01.discover-news.tokyo/articles/fLWfCuPeGysVQswlzw" class="cta-btn">
-      頭皮ケアを始める<small>公式キャンペーンを見る</small>
-    </a>
-    <p class="cta-note">※公式サイトに移動します</p>
+  <div class="closing-box">
+    こういった悩みを抱える方が選んでいます。
+  </div>
+</section>
+
+<!-- ======================================================
+     WHY FAIL + HAIR CYCLE
+     ====================================================== -->
+<section class="sec sec-white">
+  <div class="sec-head">
+    <span class="label">ROOT CAUSE</span>
+    <h2>薄毛が進む原因と<br><span class="u">他の育毛剤が効きにくい理由</span></h2>
+    <div class="divider"></div>
   </div>
 
-  <hr class="section-divider">
+  <!-- ヘアサイクル（公式画像）-->
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_dct_01.png" alt="ヘアサイクルの乱れが薄毛につながります">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_dct_02.png" alt="ヘアサイクルの説明">
 
-  <!-- ===== Section 4：チャップアップ紹介 ===== -->
-  <h2>編集部が注目した育毛剤：チャップアップ</h2>
+  <div class="compare-card ng mt16">
+    <span class="clabel">❌ 多くの育毛剤の問題点</span>
+    <strong>「保湿」だけで頭皮を整えるタイプ</strong><br>
+    表面を潤わせる設計が中心で、有効成分が毛根まで届きにくい。使い続けても実感しにくい場合があります。
+  </div>
+  <div class="compare-card ok">
+    <span class="clabel">✓ チャップアップの設計</span>
+    <strong>「有効成分 × 浸透技術」の二軸アプローチ</strong><br>
+    業界トップクラス6種の有効成分を、ナノバブル技術で角質層まで届ける設計。成分が届いてはじめて意味を持ちます。
+  </div>
+  <p class="note">※角質層まで。効果・効能は個人差があります</p>
+</section>
 
-  <!-- 商品メインビジュアル（参考元：日本初＆日本で唯一の育毛剤） -->
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664802/5b7d8cdd-f6d3-4316-928a-dc3ec44298de.png" alt="チャップアップ育毛ローション">
+<!-- ======================================================
+     PRODUCT FEATURES
+     ====================================================== -->
+<section class="sec sec-green">
+  <div class="sec-head">
+    <span class="label">PRODUCT FEATURE</span>
+    <h2>チャップアップ<br><span class="u">4つの特長</span></h2>
+    <div class="divider"></div>
+  </div>
 
-  <p>チャップアップは、<span class="sb-bg-gum-marker"><strong>6種の有効成分</strong></span>を配合した<strong>医薬部外品</strong>の育毛ローションです。</p>
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_4point_01.png" alt="チャップアップ4つのポイント">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_4point_02.png" alt="業界トップクラス6種の有効成分">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_4point_03.png" alt="こだわりぬいた成分配合">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_4point_04.png" alt="Wの保湿因子">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_4point_05.png" alt="Wの浸透技術">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_4point_06.png" alt="これら4つのポイントで">
 
-  <p>独自原料として赤ショウガ由来の<strong>「ジンゲルシックス&reg;」</strong>を配合している点も特徴のひとつ。ジンゲルシックス&reg;と6種の有効成分を配合した育毛剤は<strong>日本初※1＆日本で唯一※2</strong>とされています。</p>
+  <div class="ingredient-box">
+    <div class="ititle">有効成分（6種）</div>
+    <ul class="ilist">
+      <li>センブリエキス</li>
+      <li>グリチルリチン酸ジカリウム</li>
+      <li>塩酸ジフェンヒドラミン</li>
+      <li>トコフェロール酢酸エステル</li>
+      <li>D-パントテニルアルコール</li>
+      <li>アラントイン</li>
+    </ul>
+  </div>
+  <p class="note mt8">※医薬部外品として効果効能が認められた成分</p>
+</section>
 
-  <p class="sb-fs-10" style="color:#999;">
-    ※1 ジンゲルシックス®（ショウキョウエキス）と6種の有効成分（センブリエキス、グリチルリチン酸ジカリウム、塩酸ジフェンヒドラミン、トコフェロール酢酸エステル、D-パントテニルアルコール、アラントイン）を日本で初めて配合（株式会社天真堂調べ 2023年11月1日時点）<br>
-    ※2 上記成分を配合した日本唯一の薬用育毛剤（株式会社天真堂調べ 2023年11月1日時点）
+<!-- ======================================================
+     UNIQUE INGREDIENT / NANO
+     ====================================================== -->
+<section class="sec sec-white">
+  <div class="sec-head">
+    <span class="label">UNIQUE INGREDIENT</span>
+    <h2>日本初・日本唯一の<br><span class="u">独自成分配合</span></h2>
+    <div class="divider"></div>
+  </div>
+
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_jgl03.png" alt="四万十川の赤ショウガ ジンゲルシックス">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_jgl04.png" alt="科学誌でも紹介">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_jgl05.png" alt="クロナルガンマ配合">
+  <img class="oi mt12" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_nnb01.png" alt="ナノバブルで超噴出">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_nnb02.png" alt="ナノバブル発生装置">
+  <img class="oi mt12" src="https://chapup.jp/upload/lp/common/img/sp_doctor_advisory_banner.png" alt="東大医学部卒医師とアドバイザリー契約">
+  <img class="oi" src="https://chapup.jp/upload/lp/common/img/first_a.png" alt="日本初・日本唯一の薬用育毛剤">
+
+  <p class="note mt8">
+    ※ジンゲルシックス®とクロナル®ガンマおよび6種の有効成分を日本で初めて配合（株式会社天真堂調べ 2023年11月1日時点）<br>
+    ※日本唯一の薬用育毛剤（同社調べ、同時点）
+  </p>
+</section>
+
+<!-- ======================================================
+     AUTHORITY / PROOF
+     ====================================================== -->
+<section class="sec sec-dark">
+  <div class="sec-head">
+    <span class="label label-w">SOCIAL PROOF</span>
+    <h2 class="w">数字が証明する<br>チャップアップの実力</h2>
+    <div class="divider divider-w"></div>
+  </div>
+
+  <div class="auth-grid">
+    <div class="auth-item">
+      <div class="aval">1,000<span>万本</span></div>
+      <div class="alabel">シリーズ累計販売<br>※2023年10月調べ</div>
+    </div>
+    <div class="auth-item">
+      <div class="aval">22<span>冠</span></div>
+      <div class="alabel">楽天ランキング達成</div>
+    </div>
+    <div class="auth-item">
+      <div class="aval">No.1</div>
+      <div class="alabel">Amazon売れ筋<br>※2024年10月</div>
+    </div>
+    <div class="auth-item">
+      <div class="aval">連続<span>受賞</span></div>
+      <div class="alabel">モンドセレクション<br>WEB売上No.1</div>
+    </div>
+  </div>
+
+  <img class="oi mt16" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_authority_set.png" alt="モンドセレクション連続受賞・WEB売上No.1">
+  <img class="oi" src="https://chapup.jp/upload/lp/common/img/sp_pbg_award.png" alt="Pure Beauty Global Awards 2025 ファイナリスト">
+  <img class="oi" src="https://chapup.jp/upload/lp/common/img/sp_amazon_no1.png" alt="Amazon売れ筋No.1">
+
+  <!-- メディア（3枚に絞る） -->
+  <img class="oi mt16" src="https://chapup.jp/upload/lp/common/img/sp_newspaper.png" alt="新聞掲載">
+  <!-- 日経CNBC動画 ※YouTube IDを確認後 src の VIDEO_ID_CNBC を差し替えてください -->
+  <div style="position:relative;width:100%;padding-top:56.25%;margin-top:16px;background:#000;border-radius:6px;overflow:hidden;">
+    <iframe
+      style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+      src="https://www.youtube.com/embed/VIDEO_ID_CNBC"
+      title="日経CNBCで紹介"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- カンニング竹山のイチバン研究所動画 ※YouTube IDを確認後 src の VIDEO_ID_TKY を差し替えてください -->
+  <div style="position:relative;width:100%;padding-top:56.25%;margin-top:12px;background:#000;border-radius:6px;overflow:hidden;">
+    <iframe
+      style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+      src="https://www.youtube.com/embed/VIDEO_ID_TKY"
+      title="カンニング竹山のイチバン研究所"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen loading="lazy">
+    </iframe>
+  </div>
+  <img class="oi" src="https://chapup.jp/upload/lp/common/img/sp_clinic.png" alt="美容クリニックでも取り扱い">
+</section>
+
+<!-- ======================================================
+     HOW TO USE
+     ====================================================== -->
+<section class="sec sec-white">
+  <div class="sec-head">
+    <span class="label">HOW TO USE</span>
+    <h2>使い方はシンプル、<br>続けやすい</h2>
+    <div class="divider"></div>
+  </div>
+
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_howto.png" alt="チャップアップの使い方">
+  <img class="oi mt8" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_scene.png" alt="24時間365日体制で育毛">
+</section>
+
+<!-- ======================================================
+     VOICE（公式サイト掲載のみ）
+     ====================================================== -->
+<section class="sec sec-green">
+  <div class="sec-head">
+    <span class="label">CUSTOMER VOICE</span>
+    <h2>ご愛用者からの<br>お喜びの声</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="voice-card">
+    <div class="voice-head">
+      <div class="voice-avatar">S.Y</div>
+      <div class="voice-meta">
+        <div class="vname">S.Yさん</div>
+        <div class="vage">52歳</div>
+      </div>
+      <div class="stars">★★★★★</div>
+    </div>
+    <p class="voice-body">半年経ちましたが、<strong>妻からも好評</strong>です！</p>
+  </div>
+
+  <div class="voice-card">
+    <div class="voice-head">
+      <div class="voice-avatar">T.N</div>
+      <div class="voice-meta">
+        <div class="vname">T.Nさん</div>
+        <div class="vage">48歳</div>
+      </div>
+      <div class="stars">★★★★★</div>
+    </div>
+    <p class="voice-body">噴射したときの<strong>頭皮の刺激が心地よい</strong>！</p>
+  </div>
+
+  <img class="oi mt24" src="https://chapup.jp/upload/lp/common/img/sp_progolfer.png" alt="プロゴルファーにも継続使用">
+  <p class="note mt8">※個人の感想です。効果・効能を保証するものではありません</p>
+</section>
+
+<!-- ======================================================
+     GUARANTEE
+     ====================================================== -->
+<section class="sec sec-white">
+  <div class="sec-head">
+    <span class="label">RISK FREE</span>
+    <h2>だから、<br><span class="u">試すリスクがない</span></h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="guarantee-main">
+    <div class="g-icon">🛡️</div>
+    <div class="g-title">30日間 全額返金保証</div>
+    <div class="g-desc">
+      万が一合わないと感じたら、<strong>発送から30日以内</strong>であれば全額返金いたします。<br>
+      「体に合うか心配」という方も安心してお試しください。
+    </div>
+  </div>
+
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion006_mt/img/sp_100g_et_gualantee_0101_03.png" alt="返金保証">
+
+  <ul class="guarantee-list mt14">
+    <li>買い切りなので、2回目以降は勝手に届きません</li>
+    <li>クレジットカード払い・後払い・代金引換に対応</li>
+    <li>商品が届いた後でのお支払いも可能</li>
+    <li>送料無料でお届け</li>
+    <li>毛髪診断士®によるサポートあり</li>
+  </ul>
+
+  <div class="mt20">
+    <a href="#product_id" class="btn-cta">
+      返金保証付きでリスクなく試してみる
+      <span class="sub">↓ 初回2,480円・買い切り・送料無料</span>
+    </a>
+    <p class="cta-note">※発送から30日以内が対象</p>
+  </div>
+</section>
+
+<!-- ======================================================
+     OFFER / PRICE
+     ====================================================== -->
+<section class="sec sec-green">
+  <div class="sec-head">
+    <span class="label">OFFER</span>
+    <h2>お得なご購入方法</h2>
+    <div class="divider"></div>
+  </div>
+
+  <p class="offer-intro">
+    「いくつも育毛剤を試して、どれも効かなかった」という方に<br>
+    <strong>まず本物を体感してほしい。</strong><br>
+    その思いから、初回に限り特別価格でご提供。<br>
+    まとめ買いでさらにお得になります。
   </p>
 
-  <!-- 累計1200万本 -->
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664953/e837ce79-6840-4367-ab3f-7304684fe80b.png" alt="累計1200万本のチャップアップシリーズ">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_offer_head.png" alt="チャップアップ独自配合">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_offer_v2.png" alt="チャップアップ育毛ローション 120mL">
 
-  <!-- 医師アドバイザリー -->
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/6439926/264001eb-4e17-4296-bd1a-b83f4ff33187.png" alt="東大医学部卒の医師とアドバイザリー契約">
-
-  <p>東大医学部卒の医師とアドバイザリー契約している育毛剤会社で、その実力は<strong>美容クリニックにも置かれるほど</strong>と紹介されています。</p>
-
-  <!-- メディア掲載実績 -->
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664840/1739b598-2ea0-4c6b-9f7d-fa089aa25331.png" alt="テレビでも紹介">
-
-  <hr class="section-divider">
-
-  <!-- 赤ショウガ・ジンゲルシックス -->
-  <h3>独自原料「ジンゲルシックス&reg;」とは</h3>
-
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664921/2596db9f-a400-459e-9857-149e43729bcd.png" alt="赤ショウガ由来のジンゲルシックス">
-
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664902/2a076b1d-742c-4c39-848e-4696bba94fc5.png" alt="赤ショウガの特徴">
-
-  <p>チャップアップが注目したのが、体を温めるパワーが詰まった<strong>「赤ショウガ」</strong>。この希少な赤ショウガから抽出したジンゲルシックス&reg;を<strong>日本で初めて育毛剤に配合</strong>しています。</p>
-
-  <p class="sb-fs-10" style="color:#999;">※2022年4月13日 TPCマーケティングリサーチ株式会社調べ</p>
-
-  <!-- ナノバブル浸透 -->
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5664948/ab6680f2-faac-4f3f-bd97-de7471136c9b.png" alt="ナノバブル浸透技術">
-
-  <p>さらに、ナノバブル技法による極小気泡で有効成分が頭皮にしっかり届く※設計になっています。</p>
-  <p class="sb-fs-10" style="color:#999;">※角質層まで</p>
-
-  <hr class="section-divider">
-
-  <!-- 6種の有効成分 -->
-  <h3>業界トップクラス・<span class="sb-bg-gum-marker">6種の有効成分</span>配合</h3>
-
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665035/15ff0b5c-5254-4aee-874a-82e47559a40a.png" alt="6種の有効成分">
-
-  <table class="ingredient-table">
-    <tr>
-      <th>センブリエキス</th>
-      <td>血行促進に関わる成分として知られ、育毛剤に広く使用されています</td>
-    </tr>
-    <tr>
-      <th>グリチルリチン酸ジカリウム</th>
-      <td>頭皮の炎症を抑え、健やかな頭皮環境を保つ働きがあるとされています</td>
-    </tr>
-    <tr>
-      <th>塩酸ジフェンヒドラミン</th>
-      <td>頭皮のかゆみやフケを抑える働きがあるとされる成分です</td>
-    </tr>
-    <tr>
-      <th>アラントイン</th>
-      <td>頭皮の荒れを防ぎ、コンディションを整える働きが期待されています</td>
-    </tr>
-    <tr>
-      <th>トコフェロール酢酸エステル</th>
-      <td>ビタミンE誘導体の一種で、頭皮の血行を促す働きがあるとされています</td>
-    </tr>
-    <tr>
-      <th>D-パントテニルアルコール</th>
-      <td>毛髪に栄養を与え、頭皮を健やかに保つ成分です</td>
-    </tr>
-  </table>
-
-  <!-- 医薬部外品 -->
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665079/334eca93-ceff-407d-a586-f286124d684a.png" alt="効果効能が認められた医薬部外品">
-
-  <div class="info-box green">
-    <p class="info-box-title">チャップアップは「医薬部外品」</p>
-    <p>育毛剤の中には"保湿"のみで頭皮環境を整える製品もあります。<br>チャップアップは<span class="sb-bg-gum-marker"><strong>効果・効能が認められた医薬部外品</strong></span>として、育毛・発毛促進・抜け毛予防に関わる有効成分を配合しています。</p>
-  </div>
-
-  <hr class="section-divider">
-
-  <!-- ===== Section 5：使い方と続けやすさ ===== -->
-  <h2>使い方と続けやすさ</h2>
-  <p class="sb-fs-15" style="color:#888;">——単品で試す導線</p>
-
-  <p>育毛剤は毎日使うものだから、<strong>使いやすさ・続けやすさ</strong>が大切です。</p>
-
-  <!-- 使い方イメージ（参考元：お風呂上がりにシュッと吹きかけ） -->
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665448/53bc7c09-9869-43da-a8a8-f22779879ef3.png" alt="チャップアップの使い方">
-
-  <h3>朝晩のルーティン例</h3>
-  <ol class="step-list">
-    <li><strong>シャンプー後、タオルドライ</strong><br>髪の水気を軽くとった状態で使用するのが基本です</li>
-    <li><strong>頭皮に直接スプレー</strong><br>気になる部分を中心に、頭皮全体にまんべんなく塗布します</li>
-    <li><strong>指の腹でやさしくなじませる</strong><br>1分ほどマッサージするように頭皮全体になじませます</li>
-    <li><strong>ドライヤーで乾かす</strong><br>根元からしっかり乾かして完了です</li>
-  </ol>
-
-  <div class="info-box">
-    <p class="info-box-title">続けやすさのポイント</p>
-    <p>・ベタつきが少なく、朝のスタイリング前にも使いやすい<br>
-    ・こだわりの<strong>ジェットノズル</strong>で液が垂れにくく、当てたいところにしっかり届く<br>
-    ・育毛剤特有の匂いがなく、匂いでバレる心配もなし<br>
-    ・朝晩の洗面台ルーティンに組み込めるシンプルさ</p>
-  </div>
-
-  <!-- ===== CTA 2（商品説明後） ===== -->
-  <div class="cta-wrap">
-    <a href="https://sb-mcealer01.discover-news.tokyo/articles/fLWfCuPeGysVQswlzw" class="cta-btn">
-      単品で試してみる<small>公式サイトはこちら</small>
-    </a>
-    <p class="cta-note">※公式サイトに移動します</p>
-  </div>
-
-  <hr class="section-divider">
-
-  <!-- ===== Section 6：価格・キャンペーン ===== -->
-  <h2>まずは単品で試せるキャンペーン</h2>
-
-  <p>「いきなり定期は不安…」という方に向けて、チャップアップでは<strong>公式サイト限定の単品キャンペーン</strong>が実施されています。</p>
-
-  <!-- 価格ビジュアル（参考元） -->
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665153/c12ca703-cf73-4fb9-91eb-146d7c6d4e58.png" alt="初回限定3,280円">
-
-  <div class="price-box">
-    <p style="margin-bottom:8px;"><span style="display:inline-block; background:#c0392b; color:#fff; font-size:12px; font-weight:bold; padding:3px 14px; border-radius:20px;">初回購入限定キャンペーン</span></p>
-    <p style="font-size:14px; color:#999; text-decoration:line-through; margin-bottom:4px;">通常価格 8,690円（税込・送料込）</p>
-    <p style="font-size:32px; font-weight:bold; color:#c0392b; line-height:1.3; margin-bottom:4px;">3,280<span style="font-size:15px; font-weight:normal;">円（税込）</span></p>
-    <p style="margin-bottom:8px;"><span style="display:inline-block; background:#c0392b; color:#fff; font-size:13px; font-weight:bold; padding:2px 12px; border-radius:4px;">62%OFF</span></p>
-    <p class="sb-fs-13" style="color:#888;">※初回購入限定・お一人様1回限り<br>※送料込み・買い切りだから2回目は届きません</p>
-  </div>
-
-  <p class="sb-align-center" style="font-size:15px; color:#666;">なんと<strong>1日約109円※</strong>で始められます。<br>まずは1本試して、使用感や頭皮との相性を確認してみるのもひとつの方法です。</p>
-  <p class="sb-fs-10" style="color:#999;">※初回限定価格を1ヶ月（30日）で割った値段</p>
-
-  <!-- 返金保証・支払い方法 -->
-  <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665178/8ed36c2e-44fd-4dc7-b6b2-6f1958a4ddf9.png" alt="30日間全額返金保証">
-
-  <p>さらに<span class="sb-bg-gum-marker"><strong>30日間の全額返金保証</strong></span>付き。「体に合うか心配…」という方でも安心して試せます。</p>
-
-  <p>クレジットカード払いだけでなく、<strong>代金引換・コンビニ後払い</strong>も選択可能。支払いは商品が届いた後でOKです。</p>
-
-  <!-- CTA GIFボタン（参考元のアニメーション付きCTA） -->
-  <div class="cta-wrap">
-    <a href="https://sb-mcealer01.discover-news.tokyo/articles/fLWfCuPeGysVQswlzw" style="text-decoration:none;">
-      <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665174/7af8043f-2a54-40c3-943f-6029553114d9.gif" alt="お得に始める" style="margin:0 auto; max-width:100%;">
-    </a>
-    <p class="cta-note">※公式サイトに移動します</p>
-  </div>
-
-  <hr class="section-divider">
-
-  <!-- ===== Section 7：Q&A ===== -->
-  <h2>よくある質問</h2>
-
-  <div class="qa-item">
-    <div class="qa-q">育毛剤を使うと頭皮がヒリヒリしませんか？</div>
-    <div class="qa-a">チャップアップは無添加設計で作られており、刺激性に配慮されています。ただし、肌質には個人差がありますので、気になる方はまず少量から試してみることをおすすめします。</div>
-  </div>
-
-  <div class="qa-item">
-    <div class="qa-q">匂いは気になりますか？</div>
-    <div class="qa-a">育毛剤特有の匂いがない設計のため、整髪料や香水との干渉が気になる方にも使いやすい設計です。</div>
-  </div>
-
-  <div class="qa-item">
-    <div class="qa-q">どのくらい使い続ければいいですか？</div>
-    <div class="qa-a">頭皮環境を整えるケアは、一定期間の継続が大切と言われています。まずは1本使い切ってみて、頭皮の調子を確認するところから始めてみてください。</div>
-  </div>
-
-  <div class="qa-item">
-    <div class="qa-q">朝だけ（夜だけ）の使用でも大丈夫ですか？</div>
-    <div class="qa-a">朝晩2回の使用が推奨されていますが、まずは無理のないペースで始めることが続けるコツです。生活リズムに合わせて取り入れてみてください。</div>
-  </div>
-
-  <div class="qa-item">
-    <div class="qa-q">定期購入ではなく単品で購入できますか？</div>
-    <div class="qa-a">はい。公式サイトでは初回購入限定の単品キャンペーン（通常8,690円→3,280円・62%OFF）が実施されています。買い切りなので2回目は届きません。まずは1本から試すことが可能です。</div>
-  </div>
-
-  <hr class="section-divider">
-
-  <!-- ===== CTA 3（追いCTA） ===== -->
-  <div class="info-box green" style="text-align:center; padding:24px 16px;">
-    <p style="font-size:17px; font-weight:bold; color:#2a5c2a; margin-bottom:14px;">
-      「なんとなく気になる」今だからこそ、<br>頭皮ケアを始めてみませんか。
-    </p>
-    <div class="cta-wrap" style="padding:0;">
-      <a href="https://sb-mcealer01.discover-news.tokyo/articles/fLWfCuPeGysVQswlzw" class="cta-btn">
-        使い方・成分を確認してから申し込む<small>公式キャンペーンページへ</small>
-      </a>
+  <!-- セット価格カード -->
+  <div class="set-cards mt14">
+    <!-- 1本 -->
+    <div class="set-card main">
+      <div class="sc-label">初回限定<br>おすすめ</div>
+      <div class="sc-body">
+        <div class="sct">1本（120mL）</div>
+        <div class="scs">まずは1本でお試し</div>
+      </div>
+      <div class="sc-price">
+        <div class="sc-badge">71%OFF</div>
+        <div class="sp"><small>¥</small>2,480</div>
+        <div class="spp">通常¥8,690</div>
+      </div>
     </div>
-    <p class="cta-note" style="margin-top:8px;">※公式サイトで詳細をご確認いただけます</p>
+    <!-- 6本 -->
+    <div class="set-card">
+      <div class="sc-label">6本セット<br><small style="font-size:10px;color:var(--accent-red);font-weight:900;">1本¥2,200</small></div>
+      <div class="sc-body">
+        <div class="sct">6本（120mL×6）</div>
+        <div class="scs">単品合計¥52,140 → <strong style="color:var(--accent-red);">74%OFF</strong></div>
+      </div>
+      <div class="sc-price">
+        <div class="sc-badge">74%OFF</div>
+        <div class="sp"><small>¥</small>13,200</div>
+        <div class="spp">税・送料込み</div>
+      </div>
+    </div>
+    <!-- 12本 -->
+    <div class="set-card">
+      <div class="sc-label">12本セット<br><small style="font-size:10px;color:var(--accent-red);font-weight:900;">1本¥1,980</small></div>
+      <div class="sc-body">
+        <div class="sct">12本（120mL×12）</div>
+        <div class="scs">単品合計¥104,280 → <strong style="color:var(--accent-red);">77%OFF</strong></div>
+      </div>
+      <div class="sc-price">
+        <div class="sc-badge">77%OFF</div>
+        <div class="sp"><small>¥</small>23,760</div>
+        <div class="spp">税・送料込み</div>
+      </div>
+    </div>
   </div>
 
-  <!-- 転売品注意（参考元の注意喚起踏襲） -->
-  <div class="info-box" style="margin-top:24px; border-color:#e8c0c0; background:#fef8f8;">
-    <p class="info-box-title" style="color:#c0392b; border-bottom-color:#e8c0c0;">転売品にご注意ください</p>
-    <p class="sb-fs-15">大人気商品のため、現在転売品が増えているとのこと。公式サイト以外で購入すると偽物が紛れている可能性があり、返品もできません。<br><strong>公式サイトなら30日間の全額返金保証付き</strong>&amp;初回限定で通常の半額以下で購入できます。</p>
+  <p class="note">※チャップアップ育毛ローションを初めてご購入される方限定。ご注文はお一人様1回限り。うち4本（6本セット）／うち8本（12本セット）は付替え用。キャップとノズルを付け替えてご使用ください。お客様都合の返品はできません。</p>
+
+  <img class="oi mt12" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_delivery.png" alt="当日発送">
+  <img class="oi mt8" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_apology.png" alt="一世帯1セットまで">
+
+  <div class="scarcity mt14">
+    ⚠️ 多くのお客様にご使用いただきたいため、<br>
+    ご購入は<strong>一世帯1セットまで</strong>とさせていただきます。
   </div>
 
-  <!-- 最終CTAバナー -->
-  <div class="cta-wrap" style="margin-top:24px;">
-    <a href="https://sb-mcealer01.discover-news.tokyo/articles/fLWfCuPeGysVQswlzw" style="text-decoration:none;">
-      <img src="https://file.mysquadbeyond.com/uploads/article_photo/photo/5665230/17bdfbb4-4a1c-45e1-aa9c-6cf371ee403c.png" alt="公式サイトをチェック" style="margin:0 auto;">
+  <a href="#product_id" class="btn-cta">
+    初回2,480円（税込）で今すぐ試す
+    <span class="sub">↓ 公式サイトでお申し込み・詳細確認</span>
+  </a>
+  <p class="cta-note mt8">30日間返金保証｜送料無料｜買い切り</p>
+</section>
+
+<!-- ======================================================
+     SURVEY
+     ====================================================== -->
+<section class="sec sec-dark">
+  <div class="sec-head">
+    <span class="label label-w">SPECIAL OFFER</span>
+    <h2 class="w">アンケートに<br>お答えの方限定</h2>
+    <div class="divider divider-w"></div>
+  </div>
+
+  <div class="quiz-intro-box">
+    <strong>3問の簡単なアンケート</strong>にお答えいただくと、<br>
+    <strong>1本あたり最安1,980円（12本セット）</strong>で<br>
+    お得に購入できる情報をご案内します！
+  </div>
+
+  <!-- Q1 -->
+  <div class="quiz-block" id="q1">
+    <div class="quiz-q-label">＜Q1＞ 最近の髪の悩みを教えてください</div>
+    <ul class="quiz-options">
+      <li><button onclick="nextQ('q1','q2')">抜ける量が日に日に増えてきた</button></li>
+      <li><button onclick="nextQ('q1','q2')">髪に元気がなくなってきた</button></li>
+      <li><button onclick="nextQ('q1','q2')">セットをしても上手くキマらない</button></li>
+      <li><button onclick="nextQ('q1','q2')">部分的に生えてこない</button></li>
+    </ul>
+  </div>
+
+  <!-- Q2 -->
+  <div class="quiz-block hidden" id="q2">
+    <div class="quiz-q-label">＜Q2＞ 「チャップアップ育毛ローション」で魅力的だと感じる点は何ですか？</div>
+    <ul class="quiz-options">
+      <li><button onclick="nextQ('q2','q3')">ジェットノズルタイプで使いやすい</button></li>
+      <li><button onclick="nextQ('q2','q3')">自宅で簡単に薄毛ケアができる</button></li>
+      <li><button onclick="nextQ('q2','q3')">返金保証付きでノーリスク</button></li>
+      <li><button onclick="nextQ('q2','q3')">実績・受賞歴が豊富で信頼できる</button></li>
+    </ul>
+  </div>
+
+  <!-- Q3 -->
+  <div class="quiz-block hidden" id="q3">
+    <div class="quiz-q-label">＜Q3＞ 「チャップアップ育毛ローション」をお得に始めてみたいですか？</div>
+    <ul class="quiz-options">
+      <li><button onclick="showOffer()">はい</button></li>
+      <li><button onclick="showOffer()">いいえ</button></li>
+    </ul>
+  </div>
+</section>
+
+<!-- OFFER REVEAL -->
+<div class="offer-reveal sec sec-dark" id="offerReveal" style="padding-top:0;">
+  <div class="reveal-card">
+    <span class="rv-tag">🎉 ご回答ありがとうございました！</span>
+    <div class="rv-title">アンケート回答者限定！<br>さらにお得に購入できます</div>
+    <div class="rv-price"><span>¥</span>1,980<span>〜/本</span></div>
+    <div class="rv-note">12本セットご購入の場合（税・送料込み）</div>
+    <a href="#product_id" class="btn-cta">
+      お得な情報を今すぐ確認する
+      <span class="sub">↓ 公式サイトで詳細をチェック</span>
     </a>
-    <p class="cta-note">※公式サイトに移動します</p>
+    <p class="cta-note w mt8">返金保証付き｜送料無料</p>
+  </div>
+</div>
+
+<!-- ======================================================
+     PROMISES
+     ====================================================== -->
+<section class="sec sec-white">
+  <div class="sec-head">
+    <span class="label">QUALITY PROMISE</span>
+    <h2>安心して使うための<br>3つのお約束</h2>
+    <div class="divider"></div>
   </div>
 
-  <p><br></p>
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_promise01.png" alt="3つのお約束">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_promise02.png" alt="頭皮に余計な負担をかけません">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_promise03.png" alt="第三者機関の検査クリア">
+  <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_promise04.png" alt="国内製造・品質管理">
+</section>
 
-  <!-- ===== フッター免責 ===== -->
-  <div class="lp-footer" style="margin: 24px -20px -15px; padding:20px;">
-    <p>※本記事は編集部が独自に調査・制作したものです。</p>
-    <p>※個人の感想を含む表現があり、効果・効能を保証するものではありません。</p>
-    <p>※商品の詳細は公式サイトにてご確認ください。</p>
-    <p>※医薬部外品の効果・効能は各製品の承認内容に基づきます。</p>
-    <p>※画像はイメージです。</p>
-    <p style="text-align:center; margin-top:10px; color:#aaa;">&copy; 頭皮ケア調査編集部</p>
+<!-- ======================================================
+     CAUTION + FINAL CTA
+     ====================================================== -->
+<section class="sec sec-dark">
+  <div class="caution-card">
+    <div class="ct">⚠️ 転売品にご注意ください</div>
+    公式サイト以外で購入すると偽物が紛れている場合があり、返品対応も受けられません。<br>
+    <strong>公式サイトなら返金保証が確実に適用</strong>されます。
+  </div>
+  <img class="oi" src="https://chapup.jp/upload/lp/common/img/sp_caution.png" alt="転売品注意">
+
+  <!-- サポート -->
+  <div style="margin-top:20px;">
+    <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_support01.png" alt="毛髪診断士がご相談承ります">
+    <ul class="support-list mt12">
+      <li>
+        <a href="tel:0120303958">
+          <span class="si">📞</span>新規・購入前のお問い合わせ｜<strong>0120-303-958</strong>
+        </a>
+      </li>
+      <li>
+        <a href="tel:0120958303">
+          <span class="si">📞</span>お買い上げ後のご相談｜<strong>0120-958-303</strong>
+        </a>
+      </li>
+    </ul>
   </div>
 
-</div><!-- /.article-body -->
+  <!-- 最終CTA -->
+  <div class="mt24">
+    <img class="oi" src="https://chapup.jp/upload/lp/lotion007_mt_cpn/img/sp_offer_v2.png" alt="チャップアップ育毛ローション">
+    <div class="mt12">
+      <a href="#product_id" class="btn-cta">
+        初回2,480円（税込）で今すぐ試す
+        <span class="sub">↓ 公式サイトでお申し込み</span>
+      </a>
+      <p class="cta-note w mt8">30日間返金保証付き｜送料無料｜買い切り</p>
+    </div>
+  </div>
 
-<!-- ===== 黄色マーカーアニメーション（IntersectionObserver / 参考元と同仕様） ===== -->
+  <img class="oi mt16" src="https://chapup.jp/upload/lp/common/img/sp_sta_shop.png" alt="優良ショップ認定">
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>
+    チャップアップ（CHAP UP）公式ショップ<br>
+    株式会社ソーシャルテック<br>
+    〒160-0023 東京都新宿区西新宿4-16-13 西新宿MKビル2F<br><br>
+    ※本ページに記載の「お客様の声」は公式サイトに掲載されているご使用者様の感想です。<br>
+    個人の感想であり、効果・効能を保証するものではありません。<br>
+    ※医薬部外品として効果効能が認められています。<br>
+    ※返金保証は初回ご購入のお客様を対象に、発送から30日以内が適用期間です。
+  </p>
+</footer>
+
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var markers = document.querySelectorAll('.sb-bg-gum-marker');
-  if ('IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animated');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-    markers.forEach(function(marker) { observer.observe(marker); });
-  } else {
-    markers.forEach(function(marker) { marker.classList.add('animated'); });
-  }
-});
+function nextQ(cur, nxt) {
+  document.getElementById(cur).classList.add('hidden');
+  var el = document.getElementById(nxt);
+  el.classList.remove('hidden');
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+function showOffer() {
+  document.getElementById('q3').classList.add('hidden');
+  var rv = document.getElementById('offerReveal');
+  rv.classList.add('show');
+  rv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+var sticky = document.getElementById('stickyCta');
+window.addEventListener('scroll', function() {
+  sticky.classList.toggle('visible', window.scrollY > 350);
+}, { passive: true });
 </script>
-
 </body>
 </html>
